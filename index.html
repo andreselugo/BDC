@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BDC - Base de Conocimiento</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header onclick="volverInicio()">
+    <h1>BDC</h1>
+    <p>Base de Conocimiento</p>
+  </header>
+  <main id="inicio">
+    <h2>¿Sobre qué aprendemos hoy?</h2>
+    <div class="botones">
+      <button onclick="window.location.href='visita.html'">Visita</button>
+      <button onclick="mostrarPantalla('no-visita')">No Visita</button>
+      <button onclick="mostrarPantalla('transferencia')">Transferencia</button>
+      <button onclick="mostrarPantalla('link-utiles')">Link útiles</button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

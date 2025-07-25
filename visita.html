@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BDC - Visita</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header onclick="volverInicio()">
+    <h1>BDC</h1>
+    <p>Base de Conocimiento</p>
+  </header>
+  <main id="visita">
+    <div class="card grande">
+      <div class="card-header">
+        Sondeo
+        <span class="flecha" onclick="toggleCard(this.closest('.card'))">▼</span>
+      </div>
+      <div class="card-content">
+        <p>1) ¿Tuviste alguna situación que te hizo pensar en buscar una protección a tu casa?</p>
+        <p>2) ¿Cómo estás protegiendo tu casa hoy en día?</p>
+        <p>Nota: preguntas abiertas para incentivar la charla.</p>
+      </div>
+    </div>
+
+    <div class="card grande">
+      <div class="card-header">
+        Explicación del sistema
+        <span class="flecha" onclick="toggleCard(this.closest('.card'))">▼</span>
+      </div>
+      <div class="card-content">
+        <div class="card mediana">
+          <div class="card-header">
+            Generales
+            <span class="flecha" onclick="toggleCard(this.closest('.card'))">▼</span>
+          </div>
+          <div class="card-content">
+            <div class="card mediana">
+              <div class="card-header">
+                Sistema
+                <span class="flecha" onclick="toggleCard(this.closest('.card'))">▼</span>
+              </div>
+              <div class="card-content">
+                <p>Es monitoreado e interno.</p>
+              </div>
+            </div>
+            <div class="card mediana">
+              <div class="card-header">
+                Shocksensor
+                <span class="flecha" onclick="toggleCard(this.closest('.card'))">▼</span>
+              </div>
+              <div class="card-content">
+                <p>Sensores de alta sensibilidad en puertas y ventanas.</p>
+              </div>
+            </div>
+            <div class="card mediana">
+              <div class="card-header">
+                Panel de control
+                <span class="flecha" onclick="toggleCard(this.closest('.card'))">▼</span>
+              </div>
+              <div class="card-content">
+                <p>Portátil, contacto con la CRA.</p>
+              </div>
+            </div>
+            <div class="card mediana">
+              <div class="card-header">
+                Fotodetector
+                <span class="flecha" onclick="toggleCard(this.closest('.card'))">▼</span>
+              </div>
+              <div class="card-content">
+                <p>Imágenes en oscuridad enviadas a la CRA.</p>
+              </div>
+            </div>
+            <div class="card mediana">
+              <div class="card-header">
+                Lector de llaves
+                <span class="flecha" onclick="toggleCard(this.closest('.card'))">▼</span>
+              </div>
+              <div class="card-content">
+                <p>Activa/desactiva sin códigos.</p>
+              </div>
+            </div>
+            <div class="card mediana">
+              <div class="card-header">
+                Sirena
+                <span class="flecha" onclick="toggleCard(this.closest('.card'))">▼</span>
+              </div>
+              <div class="card-content">
+                <p>Aviso sonoro potente.</p>
+              </div>
+            </div>
+            <div class="card mediana">
+              <div class="card-header">
+                Placa disuasoria
+                <span class="flecha" onclick="toggleCard(this.closest('.card'))">▼</span>
+              </div>
+              <div class="card-content">
+                <p>Carteles externos efectivos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mediana">
+          <div class="card-header">
+            Adicionales
+            <span class="flecha" onclick="toggleCard(this.closest('.card'))">▼</span>
+          </div>
+          <div class="card-content">
+            <div class="card mediana">
+              <div class="card-header">
+                Cámaras
+                <span class="flecha" onclick="toggleCard(this.closest('.card'))">▼</span>
+              </div>
+              <div class="card-content">
+                <p>Internas/externas, visión nocturna, WIFI, monitoreo en tiempo real.</p>
+              </div>
+            </div>
+            <div class="card mediana">
+              <div class="card-header">
+                Perimetrales
+                <span class="flecha" onclick="toggleCard(this.closest('.card'))">▼</span>
+              </div>
+              <div class="card-content">
+                <p>Protegen exteriores: terraza, jardín, zonas comunes.</p>
+              </div>
+            </div>
+            <div class="card mediana">
+              <div class="card-header">
+                ZeroVision
+                <span class="flecha" onclick="toggleCard(this.closest('.card'))">▼</span>
+              </div>
+              <div class="card-content">
+                <p>Genera cero visibilidad para impedir el robo.</p>
+              </div>
+            </div>
+            <div class="card mediana">
+              <div class="card-header">
+                Mando a distancia
+                <span class="flecha" onclick="toggleCard(this.closest('.card'))">▼</span>
+              </div>
+              <div class="card-content">
+                <p>Control remoto y generación de humo.</p>
+              </div>
+            </div>
+            <div class="card mediana">
+              <div class="card-header">
+                Detector de humo
+                <span class="flecha" onclick="toggleCard(this.closest('.card'))">▼</span>
+              </div>
+              <div class="card-content">
+                <p>Detecta humo y alerta de incendio.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card grande">
+      <div class="card-header">
+        Explicación de visita
+        <span class="flecha" onclick="toggleCard(this.closest('.card'))">▼</span>
+      </div>
+      <div class="card-content">
+        <p>Demostración, cotización e instalación en el momento.</p>
+      </div>
+    </div>
+
+    <div class="card grande">
+      <div class="card-header">
+        EDS
+        <span class="flecha" onclick="toggleCard(this.closest('.card'))">▼</span>
+      </div>
+      <div class="card-content">
+        <p>Video por email antes de la visita.</p>
+      </div>
+    </div>
+
+    <div class="card grande">
+      <div class="card-header">
+        PROX
+        <span class="flecha" onclick="toggleCard(this.closest('.card'))">▼</span>
+      </div>
+      <div class="card-content">
+        <p>Perfil profesional por SMS.</p>
+      </div>
+    </div>
+
+    <div class="card grande">
+      <div class="card-header">
+        Visita Express
+        <span class="flecha" onclick="toggleCard(this.closest('.card'))">▼</span>
+      </div>
+      <div class="card-content">
+        <p>Prioridad en el día; sondear horarios.</p>
+      </div>
+    </div>
+
+    <div class="card grande">
+      <div class="card-header">
+        Preguntas filtro
+        <span class="flecha" onclick="toggleCard(this.closest('.card'))">▼</span>
+      </div>
+      <div class="card-content">
+        <div class="card mediana">
+          <div class="card-header">
+            Obras
+            <span class="flecha" onclick="toggleCard(this.closest('.card'))">▼</span>
+          </div>
+          <div class="card-content">
+            <p>No cotizar en obras; indagar tipo, dónde y fecha fin.</p>
+          </div>
+        </div>
+        <div class="card mediana">
+          <div class="card-header">
+            Metros cuadrados
+            <span class="flecha" onclick="toggleCard(this.closest('.card'))">▼</span>
+          </div>
+          <div class="card-content">
+            <p>Consultar MT² o número de ambientes (≈20 m² por ambiente).</p>
+          </div>
+        </div>
+        <div class="card mediana">
+          <div class="card-header">
+            Luz corriente
+            <span class="flecha" onclick="toggleCard(this.closest('.card'))">▼</span>
+          </div>
+          <div class="card-content">
+            <p>Verificar luz permanente o de obra para enchufar dispositivos.</p>
+          </div>
+        </div>
+        <div class="card mediana">
+          <div class="card-header">
+            Señal de celular
+            <span class="flecha" onclick="toggleCard(this.closest('.card'))">▼</span>
+          </div>
+          <div class="card-content">
+            <p>Confirmar recepción de llamadas/SMS en el domicilio.</p>
+          </div>
+        </div>
+        <div class="card mediana">
+          <div class="card-header">
+            Decisor/a
+            <span class="flecha" onclick="toggleCard(this.closest('.card'))">▼</span>
+          </div>
+          <div class="card-content">
+            <p>Debe estar presente la persona que toma la decisión.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card grande">
+      <div class="card-header">
+        Referidos
+        <span class="flecha" onclick="toggleCard(this.closest('.card'))">▼</span>
+      </div>
+      <div class="card-content">
+        <p>Cotización gratis y descuento por más domicilios.</p>
+      </div>
+    </div>
+
+    <div class="card grande">
+      <div class="card-header">
+        Confirmación de visita
+        <span class="flecha" onclick="toggleCard(this.closest('.card'))">▼</span>
+      </div>
+      <div class="card-content">
+        <p>Dirección, fecha y hora pactadas; el cliente acepta.</p>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
