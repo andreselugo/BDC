@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: #fff;
   color: #000;
 }
@@ -12,86 +12,166 @@ header {
   background: #000;
   color: #fff;
   text-align: center;
-  padding: 2rem 1rem;
-  border-bottom-left-radius: 50% 100px;
-  border-bottom-right-radius: 50% 100px;
+  padding: 3rem 1rem 8rem;
+  border-bottom-left-radius: 100% 100%;
+  border-bottom-right-radius: 100% 100%;
   cursor: pointer;
+  position: relative;
+  top: -20px;
 }
 header h1 {
   font-size: 200px;
+  line-height: 1;
 }
 header p {
   font-size: 50px;
+  line-height: 2;
 }
 main#inicio {
   text-align: center;
-  padding: 3rem 1rem;
+  padding: 2.5rem 1rem;
 }
 main#inicio h2 {
-  font-size: 100px;
+  font-size: 88px;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  margin-top: -5px;
 }
 .botones {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 5rem;
+  gap: 2rem;
+  margin-top: 1rem;
 }
 button {
-  background: red;
+  background: #cc4a4a;
   color: #fff;
   border: none;
-  border-radius: 12px;
-  padding: 1.38rem 2.76rem;
-  font-size: 1.52rem;
-  width: 276px;
-  cursor: pointer;
+  border-radius: 20px;
+  width: 550px;
+  height: 147px;
+  font-size: 70px;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 2;
+  text-align: center;
+  padding: 0 1rem;
 }
 .seccion-oculta {
   display: none;
+}
+.subpage-header {
+  width: 100%;
+  height: 168px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  position: static;
+}
+.subpage-header h1 {
+  font-size: 100px;
+  font-weight: 700;
+  color: #fff;
+}
+.subpage-header nav {
+  margin-left: auto;
+  display: flex;
+  gap: 100px;
+}
+.subpage-header nav a {
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+.subpage-header nav a.active {
+  border-bottom: 5px solid #cc4a4a;
 }
 main#visita {
   padding: 2rem 0;
 }
 .card {
-  background: #f1f1f1;
-  margin: 1rem auto;
-  border-radius: 12px;
-  overflow: hidden;
-  width: 102%;
-  max-width: 720px;
+  overflow: visible;
 }
 .card-header {
-  padding: 1rem;
-  font-weight: normal;
-  font-size: 1.3225rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-.flecha {
-  font-size: 0.68rem;
-  font-weight: normal;
-  color: #333;
+  justify-content: space-between;
   cursor: pointer;
 }
+.flecha {
+  font-size: 24px;
+  color: #000;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.card.abierta .flecha {
+  transform: rotate(180deg);
+}
+.card.grande {
+  width: 1600px;
+  min-height: 170px;
+  background: #eaeaea;
+  border-radius: 40px;
+  margin: 1rem auto;
+}
+.card.grande .card-header {
+  padding: 0 2rem;
+  font-size: 80px;
+  font-weight: 600;
+  height: 170px;
+}
+.subcard-general {
+  width: 1500px;
+  min-height: 170px;
+  background: #f9f9f9;
+  border-radius: 40px;
+  margin: 0.5rem auto;
+}
+.subcard-general .card-header {
+  padding: 0 1.5rem;
+  font-size: 60px;
+  font-weight: 600;
+}
+.subcard-inc,
+.subcard-extra {
+  width: 1400px;
+  min-height: 170px;
+  background: #f1f1f1;
+  border-radius: 40px;
+  margin: 0.5rem auto;
+}
+.subcard-inc .card-header,
+.subcard-extra .card-header {
+  padding: 0 1rem;
+  font-size: 40px;
+  font-weight: 600;
+}
 .card-content {
-  padding: 1rem;
   display: none;
+  padding: 1rem 2rem;
 }
 .card-content p {
-  font-size: 1.3225rem;
+  font-size: 30px;
   margin-bottom: 0.5rem;
 }
 .card.abierta .card-content {
   display: block;
 }
-.card.grande {
-  background: #eaeaea;
+.card.grande.nivel1 .card-header {
+  font-size: 100px;
 }
-.card.mediana {
-  background: #f9f9f9;
-  margin: 0.5rem auto;
-  width: 96%;
-  max-width: 576px;
+.subcard-general.nivel2 .card-header {
+  font-size: 80px;
+}
+.subcard-inc.nivel3 .card-header,
+.subcard-extra.nivel3 .card-header {
+  font-size: 60px;
 }
