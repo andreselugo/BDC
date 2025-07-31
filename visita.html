@@ -29,195 +29,145 @@
       </div>
     </div>
 
-    <div class="card grande nivel1">
-      <div class="card-header" onclick="toggleCard(this.closest('.card'))">
-        Explicación de sistema<span class="flecha">▼</span>
+<!-- NIVEL 1 -->
+<div class="card grande nivel1" data-title="Explicación de sistema" style="max-height: none;">
+  <div class="card-header" onclick="toggleCard(this.closest('.card'))">
+    Explicación de sistema <span class="flecha">▼</span>
+  </div>
+
+  <div class="card-content" style="display: block;">
+
+    <!-- NIVEL 2: Incluidos -->
+    <div class="card grande nivel2">
+      <div class="card-header" onclick="toggleCard(this.closest('.card'))" style="font-family: 'Poppins'; font-weight: 600; font-size: 60px;">
+        Incluidos <span class="flecha">▼</span>
       </div>
-      <div class="card-content">
-        <div class="card mediana subcard-general nivel2">
-          <div class="card-header" onclick="toggleCard(this.closest('.card'))">
-            Incluídos<span class="flecha">▼</span>
+      <div class="card-content" style="display: none;">
+
+        <!-- NIVEL 3: Subcards -->
+        <div class="subcard">
+          <div class="subcard-header" onclick="toggleSubCard(this)" style="font-family: 'Poppins'; font-weight: 600; font-size: 40px;">
+            Sistema <span class="arrow">▼</span>
           </div>
-          <div class="card-content">
-            <div class="card mediana subcard-inc nivel3">
-              <div class="card-header" onclick="toggleCard(this.closest('.card'))">
-                Sistema<span class="flecha">▼</span>
-              </div>
-              <div class="card-content">
-                <div class="card mediana subcard-ind nivel4">
-                  <div class="card-header" onclick="toggleCard(this.closest('.card'))"></div>
-                  <div class="card-content">
-                    <p>Es monitoreado e interno.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card mediana subcard-inc nivel3">
-              <div class="card-header" onclick="toggleCard(this.closest('.card'))">
-                Shocksensor<span class="flecha">▼</span>
-              </div>
-              <div class="card-content">
-                <div class="card mediana subcard-ind nivel4">
-                  <div class="card-header" onclick="toggleCard(this.closest('.card'))"></div>
-                  <div class="card-content">
-                    <p>Sensores de alta sensibilidad que sirven para proteger los accesos de tu casa o negocio. Se ubican en los marcos de puertas y ventanas.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card mediana subcard-inc nivel3">
-              <div class="card-header" onclick="toggleCard(this.closest('.card'))">
-                Panel de control<span class="flecha">▼</span>
-              </div>
-              <div class="card-content">
-                <div class="card mediana subcard-ind nivel4">
-                  <div class="card-header" onclick="toggleCard(this.closest('.card'))"></div>
-                  <div class="card-content">
-                    <p>Elemento central del sistema de alarma Verisure, la única que cuenta con un panel de control portátil que te permite llevar este dispositivo a los lugares más seguros de tu hogar o negocio en caso de robo y ponerte en contacto con nuestra Central Receptora de Alarma.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card mediana subcard-inc nivel3">
-              <div class="card-header" onclick="toggleCard(this.closest('.card'))">
-                Fotodetector<span class="flecha">▼</span>
-              </div>
-              <div class="card-content">
-                <div class="card mediana subcard-ind nivel4">
-                  <div class="card-header" onclick="toggleCard(this.closest('.card'))"></div>
-                  <div class="card-content">
-                    <p>Son capaces de tomar imágenes en la oscuridad. Si detectan movimiento, las envían a la Central Receptora de Alarmas, que las comprueba y activa el protocolo de actuación adecuado.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card mediana subcard-inc nivel3">
-              <div class="card-header" onclick="toggleCard(this.closest('.card'))">
-                Lector de llaves<span class="flecha">▼</span>
-              </div>
-              <div class="card-content">
-                <div class="card mediana subcard-ind nivel4">
-                  <div class="card-header" onclick="toggleCard(this.closest('.card'))"></div>
-                  <div class="card-content">
-                    <p>Activa/desactiva sin necesidad de memorizar códigos.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card mediana subcard-inc nivel3">
-              <div class="card-header" onclick="toggleCard(this.closest('.card'))">
-                Sirena<span class="flecha">▼</span>
-              </div>
-              <div class="card-content">
-                <div class="card mediana subcard-ind nivel4">
-                  <div class="card-header" onclick="toggleCard(this.closest('.card'))"></div>
-                  <div class="card-content">
-                    <p>Dispositivo que emite un potente aviso sonoro en caso de alarma.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card mediana subcard-inc nivel3">
-              <div class="card-header" onclick="toggleCard(this.closest('.card'))">
-                Placa disuasoria<span class="flecha">▼</span>
-              </div>
-              <div class="card-content">
-                <div class="card mediana subcard-ind nivel4">
-                  <div class="card-header" onclick="toggleCard(this.closest('.card'))"></div>
-                  <div class="card-content">
-                    <p>Carteles exteriores, herramienta efectiva contra robos.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="subcard-body hidden">
+            Es monitoreado e interno.
           </div>
         </div>
 
-        <div class="card mediana subcard-general nivel2">
-          <div class="card-header" onclick="toggleCard(this.closest('.card'))">
-            Adicionales<span class="flecha">▼</span>
+        <div class="subcard">
+          <div class="subcard-header" onclick="toggleSubCard(this)" style="font-family: 'Poppins'; font-weight: 600; font-size: 40px;">
+            Shocksensor <span class="arrow">▼</span>
           </div>
-          <div class="card-content">
-            <div class="card mediana subcard-extra nivel3">
-              <div class="card-header" onclick="toggleCard(this.closest('.card'))">
-                Cámaras<span class="flecha">▼</span>
-              </div>
-              <div class="card-content">
-                <div class="card mediana subcard-ind nivel4">
-                  <div class="card-header" onclick="toggleCard(this.closest('.card'))"></div>
-                  <div class="card-content">
-                    <p>Internas y externas (sujetas a disponibilidad), visión nocturna, Wi‑Fi, monitoreo en tiempo real.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card mediana subcard-extra nivel3">
-              <div class="card-header" onclick="toggleCard(this.closest('.card'))">
-                Perimetrales<span class="flecha">▼</span>
-              </div>
-              <div class="card-content">
-                <div class="card mediana subcard-ind nivel4">
-                  <div class="card-header" onclick="toggleCard(this.closest('.card'))"></div>
-                  <div class="card-content">
-                    <p>Protegen exteriores: terraza, jardín y zonas comunes.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card mediana subcard-extra nivel3">
-              <div class="card-header" onclick="toggleCard(this.closest('.card'))">
-                ZeroVision<span class="flecha">▼</span>
-              </div>
-              <div class="card-content">
-                <div class="card mediana subcard-ind nivel4">
-                  <div class="card-header" onclick="toggleCard(this.closest('.card'))"></div>
-                  <div class="card-content">
-                    <p>Genera cero visibilidad para impedir la acción del intruso.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card mediana subcard-extra nivel3">
-              <div class="card-header" onclick="toggleCard(this.closest('.card'))">
-                Mando a distancia<span class="flecha">▼</span>
-              </div>
-              <div class="card-content">
-                <div class="card mediana subcard-ind nivel4">
-                  <div class="card-header" onclick="toggleCard(this.closest('.card'))"></div>
-                  <div class="card-content">
-                    <p>Control remoto de la alarma y generador de humo.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card mediana subcard-extra nivel3">
-              <div class="card-header" onclick="toggleCard(this.closest('.card'))">
-                Detector de humo<span class="flecha">▼</span>
-              </div>
-              <div class="card-content">
-                <div class="card mediana subcard-ind nivel4">
-                  <div class="card-header" onclick="toggleCard(this.closest('.card'))"></div>
-                  <div class="card-content">
-                    <p>Detecta humo y alerta de posible incendio.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="subcard-body hidden">
+            Sensores de alta sensibilidad que sirven para proteger los accesos de tu casa o negocio. Se ubican en los marcos de puertas y ventanas.
           </div>
         </div>
+
+        <div class="subcard">
+          <div class="subcard-header" onclick="toggleSubCard(this)" style="font-family: 'Poppins'; font-weight: 600; font-size: 40px;">
+            Panel de control <span class="arrow">▼</span>
+          </div>
+          <div class="subcard-body hidden">
+            Elemento central del sistema de alarma Verisure, la única que cuenta con un panel de control portátil que te permite llevar este dispositivo a los lugares más seguros de tu hogar o negocio en caso de robo y ponerte en contacto con nuestra Central Receptora de Alarma.
+          </div>
+        </div>
+
+        <div class="subcard">
+          <div class="subcard-header" onclick="toggleSubCard(this)" style="font-family: 'Poppins'; font-weight: 600; font-size: 40px;">
+            Fotodetector <span class="arrow">▼</span>
+          </div>
+          <div class="subcard-body hidden">
+            Son capaces de tomar imágenes en la oscuridad. Si detectan movimiento, las envían a la Central Receptora de Alarmas, que las comprueba y activa el protocolo de actuación adecuado.
+          </div>
+        </div>
+
+        <div class="subcard">
+          <div class="subcard-header" onclick="toggleSubCard(this)" style="font-family: 'Poppins'; font-weight: 600; font-size: 40px;">
+            Lector de llaves <span class="arrow">▼</span>
+          </div>
+          <div class="subcard-body hidden">
+            Activa/desactiva sin necesidad de memorizar códigos.
+          </div>
+        </div>
+
+        <div class="subcard">
+          <div class="subcard-header" onclick="toggleSubCard(this)" style="font-family: 'Poppins'; font-weight: 600; font-size: 40px;">
+            Sirena <span class="arrow">▼</span>
+          </div>
+          <div class="subcard-body hidden">
+            Dispositivo que emite un potente aviso sonoro en caso de alarma.
+          </div>
+        </div>
+
+        <div class="subcard">
+          <div class="subcard-header" onclick="toggleSubCard(this)" style="font-family: 'Poppins'; font-weight: 600; font-size: 40px;">
+            Placa disuasoria <span class="arrow">▼</span>
+          </div>
+          <div class="subcard-body hidden">
+            Carteles exteriores, herramienta efectiva contra robos.
+          </div>
+        </div>
+
       </div>
     </div>
 
+    <!-- NIVEL 2: Adicionales -->
+    <div class="card grande nivel2">
+      <div class="card-header" onclick="toggleCard(this.closest('.card'))" style="font-family: 'Poppins'; font-weight: 600; font-size: 60px;">
+        Adicionales <span class="flecha">▼</span>
+      </div>
+      <div class="card-content" style="display: none;">
+
+        <div class="subcard">
+          <div class="subcard-header" onclick="toggleSubCard(this)" style="font-family: 'Poppins'; font-weight: 600; font-size: 40px;">
+            Cámaras <span class="arrow">▼</span>
+          </div>
+          <div class="subcard-body hidden">
+            Internas y externas (sujetas a disponibilidad), visión nocturna, Wi‑Fi, monitoreo en tiempo real.
+          </div>
+        </div>
+
+        <div class="subcard">
+          <div class="subcard-header" onclick="toggleSubCard(this)" style="font-family: 'Poppins'; font-weight: 600; font-size: 40px;">
+            Perimetrales <span class="arrow">▼</span>
+          </div>
+          <div class="subcard-body hidden">
+            Protegen exteriores: terraza, jardín y zonas comunes.
+          </div>
+        </div>
+
+        <div class="subcard">
+          <div class="subcard-header" onclick="toggleSubCard(this)" style="font-family: 'Poppins'; font-weight: 600; font-size: 40px;">
+            ZeroVision <span class="arrow">▼</span>
+          </div>
+          <div class="subcard-body hidden">
+            Genera cero visibilidad para impedir la acción del intruso.
+          </div>
+        </div>
+
+        <div class="subcard">
+          <div class="subcard-header" onclick="toggleSubCard(this)" style="font-family: 'Poppins'; font-weight: 600; font-size: 40px;">
+            Mando a distancia <span class="arrow">▼</span>
+          </div>
+          <div class="subcard-body hidden">
+            Control remoto de la alarma y generador de humo.
+          </div>
+        </div>
+
+        <div class="subcard">
+          <div class="subcard-header" onclick="toggleSubCard(this)" style="font-family: 'Poppins'; font-weight: 600; font-size: 40px;">
+            Detector de humo <span class="arrow">▼</span>
+          </div>
+          <div class="subcard-body hidden">
+            Detecta humo y alerta de posible incendio.
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
     <div class="card grande nivel1">
       <div class="card-header" onclick="toggleCard(this.closest('.card'))">
         Explicación de visita<span class="flecha">▼</span>
@@ -257,57 +207,55 @@
       </div>
     </div>
 
-    <div class="card grande nivel1">
-      <div class="card-header" onclick="toggleCard(this.closest('.card'))">
-        Preguntas filtro<span class="flecha">▼</span>
+<div class="card grande nivel1" data-title="Preguntas filtro">
+  <div class="card-header" onclick="toggleCard(this.closest('.card'))">Preguntas filtro<span class="flecha">▼</span>
+  </div>
+  <div class="card-content">
+    <div class="subcard-group">
+      <div class="subcard">
+        <div class="subcard-header" onclick="toggleSubCard(this)">
+          Obras <span class="arrow">▼</span>
+        </div>
+        <div class="subcard-body hidden">
+          ¿Hay alguna obra, reforma o modificación en el domicilio? Consultar si afecta a ventanas, puertas o instalaciones eléctricas.
+        </div>
       </div>
-      <div class="card-content">
-        <div class="card mediana subcard-general nivel2">
-          <div class="card-header" onclick="toggleCard(this.closest('.card'))">
-            Obras<span class="flecha">▼</span>
-          </div>
-          <div class="card-content">
-            <p>¿Hay alguna obra, reforma o modificación en el domicilio? Consultar si afecta a ventanas, puertas o instalaciones eléctricas.</p>
-          </div>
+      <div class="subcard">
+        <div class="subcard-header" onclick="toggleSubCard(this)">
+          Metros cuadrados <span class="arrow">▼</span>
         </div>
-
-        <div class="card mediana subcard-general nivel2">
-          <div class="card-header" onclick="toggleCard(this.closest('.card'))">
-            Metros cuadrados<span class="flecha">▼</span>
-          </div>
-          <div class="card-content">
-            <p>Preguntar por la superficie aproximada a cubrir con el sistema. Si es un PH o departamento, confirmar si hay espacios comunes o compartidos.</p>
-          </div>
+        <div class="subcard-body hidden">
+          Preguntar por la superficie aproximada a cubrir con el sistema. Si es un PH o departamento, confirmar si hay espacios comunes o compartidos.
         </div>
-
-        <div class="card mediana subcard-general nivel2">
-          <div class="card-header" onclick="toggleCard(this.closest('.card'))">
-            Luz corriente<span class="flecha">▼</span>
-          </div>
-          <div class="card-content">
-            <p>Confirmar que haya suministro eléctrico estable. Consultar si hubo cortes recientes o si hay grupos electrógenos.</p>
-          </div>
+      </div>
+      <div class="subcard">
+        <div class="subcard-header" onclick="toggleSubCard(this)">
+          Decisor <span class="arrow">▼</span>
         </div>
-
-        <div class="card mediana subcard-general nivel2">
-          <div class="card-header" onclick="toggleCard(this.closest('.card'))">
-            Señal de celular<span class="flecha">▼</span>
-          </div>
-          <div class="card-content">
-            <p>¿Hay buena señal de celular dentro del domicilio? Preguntar si suelen usar WiFi o datos, y si hay zonas sin cobertura.</p>
-          </div>
+        <div class="subcard-body hidden">
+          Confirmar quién toma la decisión final de contratación del sistema.
         </div>
-
-        <div class="card mediana subcard-general nivel2">
-          <div class="card-header" onclick="toggleCard(this.closest('.card'))">
-            Decisor/a<span class="flecha">▼</span>
-          </div>
-          <div class="card-content">
-            <p>¿Quién toma la decisión final? Consultar si está presente o si hay que agendar una llamada con esa persona.</p>
-          </div>
+      </div>
+      <div class="subcard">
+        <div class="subcard-header" onclick="toggleSubCard(this)">
+          Luz Corriente <span class="arrow">▼</span>
+        </div>
+        <div class="subcard-body hidden">
+          Verificar si hay corriente eléctrica en el lugar, o si se encuentra desconectada.
+        </div>
+      </div>
+      <div class="subcard">
+        <div class="subcard-header" onclick="toggleSubCard(this)">
+          Señal de celular <span class="arrow">▼</span>
+        </div>
+        <div class="subcard-body hidden">
+          Confirmar si hay señal en el interior del domicilio y qué empresa de telefonía tiene mejor recepción.
         </div>
       </div>
     </div>
+
+  </div>
+</div>
 
     <div class="card grande nivel1">
       <div class="card-header" onclick="toggleCard(this.closest('.card'))">
