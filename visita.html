@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>BDC – Visita</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
   <header class="subpage-header" onclick="volverInicio()">
@@ -17,171 +20,172 @@
       <a href="transferencia.html">Transferencia</a>
     </nav>
   </header>
+
   <main id="visita">
     <div class="card grande nivel1">
-      <div class="card-header" onclick="toggleCard(this.closest('.card'))">
+      <div class="card-header poppins-regular-30" onclick="toggleCard(this.closest('.card'))">
         Sondeo<span class="flecha">▼</span>
       </div>
-      <div class="card-content">
-        <p>¿Sufrió algún hecho que le hizo pensar en buscar seguridad para su hogar?</p>
-        <p>¿De qué forma está protegiendo su domicilio actualmente?</p>
-        <p><strong>Nota:</strong> formular preguntas abiertas para incentivar la conversación.</p>
+      <div class="card-content poppins-regular-30">
+        <p><strong>Se debe consultar:</strong></p>
+        <p>1) ¿Sufrió algún hecho que le hizo pensar en buscar seguridad para su hogar?</p>
+        <p>2) ¿De qué forma está protegiendo su domicilio actualmente?</p>
+        <p>
+          <strong>Nota:</strong> No necesariamente tienen que ser estar prefuntas.
+          La idea es formular preguntas abiertas para incentivar la conversación
+          y tener herramientas para rebatir
+        </p>
       </div>
     </div>
 
-<!-- NIVEL 1 -->
-<div class="card grande nivel1" data-title="Explicación de sistema" style="max-height: none;">
-  <div class="card-header" onclick="toggleCard(this.closest('.card'))">
-    Explicación de sistema <span class="flecha">▼</span>
-  </div>
-
-  <div class="card-content" style="display: block;">
-
-    <!-- NIVEL 2: Incluidos -->
-    <div class="card grande nivel2">
-      <div class="card-header" onclick="toggleCard(this.closest('.card'))" style="font-family: 'Poppins'; font-weight: 600; font-size: 60px;">
-        Incluidos <span class="flecha">▼</span>
+    <!-- NIVEL 1 -->
+    <div class="card grande nivel1" data-title="Explicación de sistema" style="max-height: none;">
+      <div class="card-header poppins-semibold-80" onclick="toggleCard(this.closest('.card'))">
+        Explicación de sistema <span class="flecha">▼</span>
       </div>
-      <div class="card-content" style="display: none;">
 
-        <!-- NIVEL 3: Subcards -->
-        <div class="subcard">
-          <div class="subcard-header" onclick="toggleSubCard(this)" style="font-family: 'Poppins'; font-weight: 600; font-size: 40px;">
-            Sistema <span class="arrow">▼</span>
+      <div class="card-content" style="display: block;">
+        <!-- NIVEL 2: Incluidos -->
+        <div class="card grande nivel2">
+          <div class="card-header poppins-semibold-60" onclick="toggleCard(this.closest('.card'))">
+            Incluidos <span class="flecha">▼</span>
           </div>
-          <div class="subcard-body hidden">
-            Es monitoreado e interno.
+          <div class="card-content" style="display: none;">
+            <!-- NIVEL 3: Subcards -->
+            <div class="subcard">
+              <div class="subcard-header poppins-semibold-60" onclick="toggleSubCard(this)">
+                Sistema <span class="arrow">▼</span>
+              </div>
+              <div class="subcard-body hidden poppins-regular-30">
+                Es monitoreado e interno.
+              </div>
+            </div>
+
+            <div class="subcard">
+              <div class="subcard-header poppins-semibold-60" onclick="toggleSubCard(this)">
+                Shocksensor <span class="arrow">▼</span>
+              </div>
+              <div class="subcard-body hidden poppins-regular-30">
+                Sensores de alta sensibilidad que sirven para proteger los accesos de tu casa o negocio. Se ubican en los marcos de puertas y ventanas.
+              </div>
+            </div>
+
+            <div class="subcard">
+              <div class="subcard-header poppins-semibold-60" onclick="toggleSubCard(this)">
+                Panel de control <span class="arrow">▼</span>
+              </div>
+              <div class="subcard-body hidden poppins-regular-30">
+                Elemento central del sistema de alarma Verisure, la única que cuenta con un panel de control portátil que te permite llevar este dispositivo a los lugares más seguros de tu hogar o negocio en caso de robo y ponerte en contacto con nuestra Central Receptora de Alarma.
+              </div>
+            </div>
+
+            <div class="subcard">
+              <div class="subcard-header poppins-semibold-60" onclick="toggleSubCard(this)">
+                Fotodetector <span class="arrow">▼</span>
+              </div>
+              <div class="subcard-body hidden poppins-regular-30">
+                Son capaces de tomar imágenes en la oscuridad. Si detectan movimiento, las envían a la Central Receptora de Alarmas, que las comprueba y activa el protocolo de actuación adecuado.
+              </div>
+            </div>
+
+            <div class="subcard">
+              <div class="subcard-header poppins-semibold-60" onclick="toggleSubCard(this)">
+                Lector de llaves <span class="arrow">▼</span>
+              </div>
+              <div class="subcard-body hidden poppins-regular-30">
+                Activa/desactiva sin necesidad de memorizar códigos.
+              </div>
+            </div>
+
+            <div class="subcard">
+              <div class="subcard-header poppins-semibold-60" onclick="toggleSubCard(this)">
+                Sirena <span class="arrow">▼</span>
+              </div>
+              <div class="subcard-body hidden poppins-regular-30">
+                Dispositivo que emite un potente aviso sonoro en caso de alarma.
+              </div>
+            </div>
+
+            <div class="subcard">
+              <div class="subcard-header poppins-semibold-60" onclick="toggleSubCard(this)">
+                Placa disuasoria <span class="arrow">▼</span>
+              </div>
+              <div class="subcard-body hidden poppins-regular-30">
+                Carteles exteriores, herramienta efectiva contra robos.
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="subcard">
-          <div class="subcard-header" onclick="toggleSubCard(this)" style="font-family: 'Poppins'; font-weight: 600; font-size: 40px;">
-            Shocksensor <span class="arrow">▼</span>
+        <!-- NIVEL 2: Adicionales -->
+        <div class="card grande nivel2">
+          <div class="card-header poppins-semibold-60" onclick="toggleCard(this.closest('.card'))">
+            Adicionales <span class="flecha">▼</span>
           </div>
-          <div class="subcard-body hidden">
-            Sensores de alta sensibilidad que sirven para proteger los accesos de tu casa o negocio. Se ubican en los marcos de puertas y ventanas.
+          <div class="card-content" style="display: none;">
+            <div class="subcard">
+              <div class="subcard-header poppins-semibold-60" onclick="toggleSubCard(this)">
+                Cámaras <span class="arrow">▼</span>
+              </div>
+              <div class="subcard-body hidden poppins-regular-30">
+                Internas y externas (sujetas a disponibilidad), visión nocturna, Wi‑Fi, monitoreo en tiempo real.
+              </div>
+            </div>
+
+            <div class="subcard">
+              <div class="subcard-header poppins-semibold-60" onclick="toggleSubCard(this)">
+                Perimetrales <span class="arrow">▼</span>
+              </div>
+              <div class="subcard-body hidden poppins-regular-30">
+                Protegen exteriores: terraza, jardín y zonas comunes.
+              </div>
+            </div>
+
+            <div class="subcard">
+              <div class="subcard-header poppins-semibold-60" onclick="toggleSubCard(this)">
+                ZeroVision <span class="arrow">▼</span>
+              </div>
+              <div class="subcard-body hidden poppins-regular-30">
+                Genera cero visibilidad para impedir la acción del intruso.
+              </div>
+            </div>
+
+            <div class="subcard">
+              <div class="subcard-header poppins-semibold-60" onclick="toggleSubCard(this)">
+                Mando a distancia <span class="arrow">▼</span>
+              </div>
+              <div class="subcard-body hidden poppins-regular-30">
+                Control remoto de la alarma y generador de humo.
+              </div>
+            </div>
+
+            <div class="subcard">
+              <div class="subcard-header poppins-semibold-60" onclick="toggleSubCard(this)">
+                Detector de humo <span class="arrow">▼</span>
+              </div>
+              <div class="subcard-body hidden poppins-regular-30">
+                Detecta humo y alerta de posible incendio.
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="subcard">
-          <div class="subcard-header" onclick="toggleSubCard(this)" style="font-family: 'Poppins'; font-weight: 600; font-size: 40px;">
-            Panel de control <span class="arrow">▼</span>
-          </div>
-          <div class="subcard-body hidden">
-            Elemento central del sistema de alarma Verisure, la única que cuenta con un panel de control portátil que te permite llevar este dispositivo a los lugares más seguros de tu hogar o negocio en caso de robo y ponerte en contacto con nuestra Central Receptora de Alarma.
-          </div>
-        </div>
-
-        <div class="subcard">
-          <div class="subcard-header" onclick="toggleSubCard(this)" style="font-family: 'Poppins'; font-weight: 600; font-size: 40px;">
-            Fotodetector <span class="arrow">▼</span>
-          </div>
-          <div class="subcard-body hidden">
-            Son capaces de tomar imágenes en la oscuridad. Si detectan movimiento, las envían a la Central Receptora de Alarmas, que las comprueba y activa el protocolo de actuación adecuado.
-          </div>
-        </div>
-
-        <div class="subcard">
-          <div class="subcard-header" onclick="toggleSubCard(this)" style="font-family: 'Poppins'; font-weight: 600; font-size: 40px;">
-            Lector de llaves <span class="arrow">▼</span>
-          </div>
-          <div class="subcard-body hidden">
-            Activa/desactiva sin necesidad de memorizar códigos.
-          </div>
-        </div>
-
-        <div class="subcard">
-          <div class="subcard-header" onclick="toggleSubCard(this)" style="font-family: 'Poppins'; font-weight: 600; font-size: 40px;">
-            Sirena <span class="arrow">▼</span>
-          </div>
-          <div class="subcard-body hidden">
-            Dispositivo que emite un potente aviso sonoro en caso de alarma.
-          </div>
-        </div>
-
-        <div class="subcard">
-          <div class="subcard-header" onclick="toggleSubCard(this)" style="font-family: 'Poppins'; font-weight: 600; font-size: 40px;">
-            Placa disuasoria <span class="arrow">▼</span>
-          </div>
-          <div class="subcard-body hidden">
-            Carteles exteriores, herramienta efectiva contra robos.
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- NIVEL 2: Adicionales -->
-    <div class="card grande nivel2">
-      <div class="card-header" onclick="toggleCard(this.closest('.card'))" style="font-family: 'Poppins'; font-weight: 600; font-size: 60px;">
-        Adicionales <span class="flecha">▼</span>
-      </div>
-      <div class="card-content" style="display: none;">
-
-        <div class="subcard">
-          <div class="subcard-header" onclick="toggleSubCard(this)" style="font-family: 'Poppins'; font-weight: 600; font-size: 40px;">
-            Cámaras <span class="arrow">▼</span>
-          </div>
-          <div class="subcard-body hidden">
-            Internas y externas (sujetas a disponibilidad), visión nocturna, Wi‑Fi, monitoreo en tiempo real.
-          </div>
-        </div>
-
-        <div class="subcard">
-          <div class="subcard-header" onclick="toggleSubCard(this)" style="font-family: 'Poppins'; font-weight: 600; font-size: 40px;">
-            Perimetrales <span class="arrow">▼</span>
-          </div>
-          <div class="subcard-body hidden">
-            Protegen exteriores: terraza, jardín y zonas comunes.
-          </div>
-        </div>
-
-        <div class="subcard">
-          <div class="subcard-header" onclick="toggleSubCard(this)" style="font-family: 'Poppins'; font-weight: 600; font-size: 40px;">
-            ZeroVision <span class="arrow">▼</span>
-          </div>
-          <div class="subcard-body hidden">
-            Genera cero visibilidad para impedir la acción del intruso.
-          </div>
-        </div>
-
-        <div class="subcard">
-          <div class="subcard-header" onclick="toggleSubCard(this)" style="font-family: 'Poppins'; font-weight: 600; font-size: 40px;">
-            Mando a distancia <span class="arrow">▼</span>
-          </div>
-          <div class="subcard-body hidden">
-            Control remoto de la alarma y generador de humo.
-          </div>
-        </div>
-
-        <div class="subcard">
-          <div class="subcard-header" onclick="toggleSubCard(this)" style="font-family: 'Poppins'; font-weight: 600; font-size: 40px;">
-            Detector de humo <span class="arrow">▼</span>
-          </div>
-          <div class="subcard-body hidden">
-            Detecta humo y alerta de posible incendio.
-          </div>
-        </div>
-
       </div>
     </div>
 
-  </div>
-</div>
     <div class="card grande nivel1">
-      <div class="card-header" onclick="toggleCard(this.closest('.card'))">
+      <div class="card-header poppins-regular-30" onclick="toggleCard(this.closest('.card'))">
         Explicación de visita<span class="flecha">▼</span>
       </div>
-      <div class="card-content">
+      <div class="card-content poppins-regular-30">
         <p>Demostración, cotización e instalación en el momento.</p>
       </div>
     </div>
 
     <div class="card grande nivel1">
-      <div class="card-header" onclick="toggleCard(this.closest('.card'))">
+      <div class="card-header poppins-regular-30" onclick="toggleCard(this.closest('.card'))">
         Venta de visita express<span class="flecha">▼</span>
       </div>
-      <div class="card-content">
+      <div class="card-content poppins-regular-30">
         <p><strong>Se debe:</strong></p>
         <p>Priorizar una visita en el día</p>
         <p>Poner en situación para que acepte la visita</p>
@@ -190,91 +194,96 @@
     </div>
 
     <div class="card grande nivel1">
-      <div class="card-header" onclick="toggleCard(this.closest('.card'))">
+      <div class="card-header poppins-regular-30" onclick="toggleCard(this.closest('.card'))">
         PROX<span class="flecha">▼</span>
       </div>
-      <div class="card-content">
+      <div class="card-content poppins-regular-30">
         <p>Por SMS le llega el perfil profesional del experto</p>
       </div>
     </div>
 
     <div class="card grande nivel1">
-      <div class="card-header" onclick="toggleCard(this.closest('.card'))">
+      <div class="card-header poppins-regular-30" onclick="toggleCard(this.closest('.card'))">
         EDS<span class="flecha">▼</span>
       </div>
-      <div class="card-content">
+      <div class="card-content poppins-regular-30">
         <p>Por email le llega un video muy importante que vea previo/ antes de la visita</p>
       </div>
     </div>
 
-<div class="card grande nivel1" data-title="Preguntas filtro">
-  <div class="card-header" onclick="toggleCard(this.closest('.card'))">Preguntas filtro<span class="flecha">▼</span>
-  </div>
-  <div class="card-content">
-    <div class="subcard-group">
-      <div class="subcard">
-        <div class="subcard-header" onclick="toggleSubCard(this)">
-          Obras <span class="arrow">▼</span>
-        </div>
-        <div class="subcard-body hidden">
-          ¿Hay alguna obra, reforma o modificación en el domicilio? Consultar si afecta a ventanas, puertas o instalaciones eléctricas.
-        </div>
+    <div class="card grande nivel1" data-title="Preguntas filtro">
+      <div class="card-header poppins-regular-30" onclick="toggleCard(this.closest('.card'))">
+        Preguntas filtro<span class="flecha">▼</span>
       </div>
-      <div class="subcard">
-        <div class="subcard-header" onclick="toggleSubCard(this)">
-          Metros cuadrados <span class="arrow">▼</span>
-        </div>
-        <div class="subcard-body hidden">
-          Preguntar por la superficie aproximada a cubrir con el sistema. Si es un PH o departamento, confirmar si hay espacios comunes o compartidos.
-        </div>
-      </div>
-      <div class="subcard">
-        <div class="subcard-header" onclick="toggleSubCard(this)">
-          Decisor <span class="arrow">▼</span>
-        </div>
-        <div class="subcard-body hidden">
-          Confirmar quién toma la decisión final de contratación del sistema.
-        </div>
-      </div>
-      <div class="subcard">
-        <div class="subcard-header" onclick="toggleSubCard(this)">
-          Luz Corriente <span class="arrow">▼</span>
-        </div>
-        <div class="subcard-body hidden">
-          Verificar si hay corriente eléctrica en el lugar, o si se encuentra desconectada.
-        </div>
-      </div>
-      <div class="subcard">
-        <div class="subcard-header" onclick="toggleSubCard(this)">
-          Señal de celular <span class="arrow">▼</span>
-        </div>
-        <div class="subcard-body hidden">
-          Confirmar si hay señal en el interior del domicilio y qué empresa de telefonía tiene mejor recepción.
+      <div class="card-content">
+        <div class="subcard-group">
+          <div class="subcard">
+            <div class="subcard-header" onclick="toggleSubCard(this)">
+              Obras <span class="arrow">▼</span>
+            </div>
+            <div class="subcard-body hidden poppins-regular-30">
+              ¿Hay alguna obra, reforma o modificación en el domicilio? Consultar si afecta a ventanas, puertas o instalaciones eléctricas.
+            </div>
+          </div>
+
+          <div class="subcard">
+            <div class="subcard-header" onclick="toggleSubCard(this)">
+              Metros cuadrados <span class="arrow">▼</span>
+            </div>
+            <div class="subcard-body hidden poppins-regular-30">
+              Preguntar por la superficie aproximada a cubrir con el sistema. Si es un PH o departamento, confirmar si hay espacios comunes o compartidos.
+            </div>
+          </div>
+
+          <div class="subcard">
+            <div class="subcard-header" onclick="toggleSubCard(this)">
+              Decisor <span class="arrow">▼</span>
+            </div>
+            <div class="subcard-body hidden poppins-regular-30">
+              Confirmar quién toma la decisión final de contratación del sistema.
+            </div>
+          </div>
+
+          <div class="subcard">
+            <div class="subcard-header" onclick="toggleSubCard(this)">
+              Luz Corriente <span class="arrow">▼</span>
+            </div>
+            <div class="subcard-body hidden poppins-regular-30">
+              Verificar si hay corriente eléctrica en el lugar, o si se encuentra desconectada.
+            </div>
+          </div>
+
+          <div class="subcard">
+            <div class="subcard-header" onclick="toggleSubCard(this)">
+              Señal de celular <span class="arrow">▼</span>
+            </div>
+            <div class="subcard-body hidden poppins-regular-30">
+              Confirmar si hay señal en el interior del domicilio y qué empresa de telefonía tiene mejor recepción.
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-  </div>
-</div>
-
     <div class="card grande nivel1">
-      <div class="card-header" onclick="toggleCard(this.closest('.card'))">
+      <div class="card-header poppins-regular-30" onclick="toggleCard(this.closest('.card'))">
         Solicitud de referidos<span class="flecha">▼</span>
       </div>
-      <div class="card-content">
+      <div class="card-content poppins-regular-30">
         <p>Cotización gratis y descuento por más domicilios.</p>
       </div>
     </div>
 
     <div class="card grande nivel1">
-      <div class="card-header" onclick="toggleCard(this.closest('.card'))">
+      <div class="card-header poppins-regular-30" onclick="toggleCard(this.closest('.card'))">
         Confirmación de visita<span class="flecha">▼</span>
       </div>
-      <div class="card-content">
+      <div class="card-content poppins-regular-30">
         <p>Dirección, fecha y hora pactadas; el cliente acepta.</p>
       </div>
     </div>
   </main>
+
   <script src="script.js"></script>
 </body>
 </html>
