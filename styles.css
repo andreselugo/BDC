@@ -99,18 +99,22 @@ main#visita {
 }
 .card {
   overflow: visible;
+  transition: border 0.3s ease;
 }
 .card-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  padding: 0 4rem;
 }
 .flecha {
-  font-size: 24px;
+  font-size: 40px;
   color: #000;
   transition: transform 0.3s ease;
   cursor: pointer;
+  margin-left: auto;
+  padding-left: 1rem;
 }
 .card.abierta .flecha {
   transform: rotate(180deg);
@@ -123,7 +127,6 @@ main#visita {
   margin: 1rem auto;
 }
 .card.grande .card-header {
-  padding: 0 2rem;
   font-size: 80px;
   font-weight: 600;
   height: 170px;
@@ -155,15 +158,22 @@ main#visita {
   font-weight: 600;
 }
 .card-content {
-  display: none;
-  padding: 1rem 2rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.3s ease;
+  padding: 0 2rem;
 }
 .card-content p {
   font-size: 30px;
   margin-bottom: 0.5rem;
 }
 .card.abierta .card-content {
-  display: block;
+  max-height: none;
+  padding: 1rem 2rem;
+  overflow: visible;
+}
+.card.abierta {
+  border: 5px solid #cc4a4a;
 }
 .card.grande.nivel1 .card-header {
   font-size: 100px;
@@ -174,4 +184,49 @@ main#visita {
 .subcard-inc.nivel3 .card-header,
 .subcard-extra.nivel3 .card-header {
   font-size: 60px;
+}
+.subcard-group {
+  margin-top: 20px;
+}
+.subcard {
+  background: #ffffff;
+  border-radius: 25px;
+  border: 3px solid #e6e6e6;
+  margin-bottom: 20px;
+  padding: 30px;
+}
+.subcard-header {
+  font-size: 60px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.subcard-body {
+  margin-top: 20px;
+  font-size: 26px;
+}
+.hidden {
+  display: none;
+}
+.subcard-header .arrow {
+  font-size: 20px;
+  margin-left: 20px;
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+.subcard-body.hidden {
+  display: none;
+}
+.card.grande {
+  margin-bottom: 20px;
+}
+.card.grande.nivel2 {
+  width: 100%;
+  background: #f1f1f1;
+  border-radius: 40px;
+  margin: 1rem 0;
+  border: 1px solid #f01010;
 }
