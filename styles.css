@@ -32,7 +32,7 @@ main#inicio {
   padding: 2.5rem 1rem;
 }
 main#inicio h2 {
-  font-size: 88px;
+  font-size: 80px;
   font-weight: 600;
   margin-bottom: 3rem;
   margin-top: -5px;
@@ -229,4 +229,29 @@ main#visita {
   border-radius: 40px;
   margin: 1rem 0;
   border: 1px solid #f01010;
+}
+.poppins-regular-30 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+.poppins-semibold-30 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+.poppins-semibold-40 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+.poppins-semibold-60 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+}
+.poppins-semibold-80 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 80px;
 }
