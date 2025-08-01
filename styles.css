@@ -255,3 +255,8 @@ main#visita {
   font-weight: 600;
   font-size: 80px;
 }
+main#visita {
+  transform: scale(0.8);
+  transform-origin: top left;
+  width: 120%;
+}
