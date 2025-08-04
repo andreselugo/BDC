@@ -47,9 +47,24 @@
       <div class="card-header poppins-semibold-60" onclick="toggleCard(this.closest('.card'))">
         Empatía <span class="flecha">▼</span>
       </div>
-
       <div class="card-content" style="display: block;">
-        <!-- NIVEL 2: Situaciones -->
+
+	<!--¿Qué es -->
+        <div class="card grande nivel2">
+          <div class="card-header poppins-semibold-40" onclick="toggleCard(this.closest('.card'))">
+           ¿Qué es? <span class="flecha">▼</span>
+          </div>
+          <div class="card-content" style="display: none;">
+              <div class="subcard-body hidden poppins-regular-30">
+        	<p>-Juega un papel fundamental en nuestra gestión. Creamos un ambiente positivo en donde el cliente se sienta escuchado y sienta que estamos para ayudarlo, porque comprendemos sus necesidades.</p>
+		<p>-Refiere a la capacidad de comprender y compartir sentimientos de la otra persona.</p>
+		<p>-Nos permite establecer una conexión positiva con la persona del otro lado.</p>
+		<p>-Implica escuchar, entender y ofrecer soluciones con un enfoque amigable.</p>
+		</div>
+              </div>
+            </div>
+		  
+        <!--Situaciones -->
         <div class="card grande nivel2">
           <div class="card-header poppins-semibold-40" onclick="toggleCard(this.closest('.card'))">
             Situaciones <span class="flecha">▼</span>
@@ -69,7 +84,7 @@
                 Tiene alarma <span class="arrow">▼</span>
               </div>
               <div class="subcard-body hidden poppins-regular-30">
-              Indagar cual tiene y mencionar que estamos con muchos llamados de esa empresa de clientes disconformes con el servicio.
+              Indagar cuál tiene y mencionar que estamos con muchos llamados de esa empresa de clientes disconformes con el servicio.
               </div>
             </div>
             <div class="subcard">
@@ -89,140 +104,67 @@
                 Entiendo completamente que no quieras brindar tu número de DNI. Te explico que esto es por un tema de seguridad para ambas partes. Nosotros te enviamos el perfil profesional del experto, que tiene todos sus datos personas y en contraparte, te pedimos el DNI
               </div>
             </div>
-    <div class="card grande nivel1">
-      <div class="card-header poppins-regular-30" onclick="toggleCard(this.closest('.card'))">
-        Explicación de visita<span class="flecha">▼</span>
-      </div>
-      <div class="card-content poppins-regular-30">
-        <p>Cuando el experto se acerca al domicilio, realiza:</p>
-        <br>
-      <p>-Una demostración de los dispositivos</p>
-      <p>-Una cotización en base a los que necesite</p>
-      <p>-Tiene una posible instalación en el momento</p>
-      <br>
-      <p><strong>Nota:</strong> En casos en donde le sacamos visita para una casa que no era la que quería cotizar, debe quedar bastante claro esto.</p>
-      <br>
-      <p><strong>Por ejemplo:</strong> "Como no tenes acceso al lugar que queres cotizar, nos acercamos al domicilio en donde estás viviendo ahora. En ese tenes una demostración, cotización y posible instalación. Lo podes dejar instalado, después lo trasladas a ese domicilio cuando te mudes, y de esa manera ya tenes protegido el nuevo domicilio"</p>
-      </div>
-    </div>
-
-    <div class="card grande nivel1">
-      <div class="card-header poppins-regular-30" onclick="toggleCard(this.closest('.card'))">
-        Venta de visita express<span class="flecha">▼</span>
-      </div>
-      <div class="card-content poppins-regular-30">
-        <p>Consiste en priorizar la visita en el día.</p>
-      <p><strong>Debemos:</strong> Sondear horarios del cliente y generar necesidad usando la información obtenida.</p>  
-      <br>
-      <p><strong>Tips:</strong></p>
-      <p>-Sondeando horarios, pactamos un horario comprendido en el rango que nos dio el cliente y vamos al cierre, por ejemplo con el PROX</p>
-      <p>-Poner en situación hablando de la demanda de la zona. Indicar que la idea es prevenir un hecho antes de que le suceda algo.</p>
-      </div>
-    </div>
-
-    <div class="card grande nivel1">
-      <div class="card-header poppins-regular-30" onclick="toggleCard(this.closest('.card'))">
-        PROX<span class="flecha">▼</span>
-      </div>
-      <div class="card-content poppins-regular-30">
-        <p>Por SMS, se le envía el link con el perfil profesional del experto.
-      <br>
-      <p><strong>¿Por qué?:</strong> Se indica de esa manera, porque le transmite al cliente que se trata de una persona experta en el área de seguridad.</p>
-      <br>
-      <p><strong>No es correcto:</strong></p> Indicar que se le envía el perfil de mi compañero, de la persona que pasa o de la persona que le cotiza</p>
-      </div>
-    </div>
-
-    <div class="card grande nivel1">
-      <div class="card-header poppins-regular-30" onclick="toggleCard(this.closest('.card'))">
-        EDS<span class="flecha">▼</span>
-      </div>
-      <div class="card-content poppins-regular-30">
-        <p>Por email le llega un video muy importante que vea previo/ antes de la visita</p>
-      </div>
-    </div>
-
+		  
+   <--REBATES-->	  
     <div class="card grande nivel1" data-title="Preguntas filtro">
       <div class="card-header poppins-regular-30" onclick="toggleCard(this.closest('.card'))">
-        Preguntas filtro<span class="flecha">▼</span>
+        ¿Cómo se forma un rebate?<span class="flecha">▼</span>
       </div>
       <div class="card-content">
         <div class="subcard-group">
           <div class="subcard">
             <div class="subcard-header" onclick="toggleSubCard(this)">
-              Obras <span class="arrow">▼</span>
+           Sondeo <span class="arrow">▼</span>
             </div>
             <div class="subcard-body hidden poppins-regular-30">
-            <p>No podemos cotizar un domicilio que esté en obras porque puede interferir con la demostración de los dispositivos. </p>
+            <p>Se hace para entender el escenario actual.</p>
             <br>
-            <p>En caso que el cliente esté en obras internas, se debe indagar de manera clara y sin inducir la respuesta. Se debe consultar: </p>
-          <p>1) ¿Qué tipos de está haciendo? No darle ejemplos. Hacemos la pregunta y que el cliente diga. </p>
-          <p>2) ¿En dónde lo está haciendo? Refiere a que espacios internos del domicilio.</p>
-          <p>3) ¿Cuándo termina? Debemos saber si termina en 7 días.</p>
-          <br>
-	        <p><strong>Nota:</strong> En caso de no haber comenzado las obras, se debe indagar si tiene una fecha de inicio. </p>
+	    <p>Hacemos preguntas abiertas para comprender por qué el cliente cotiza, qué quiere proteger, si sucedió algo en el barrio, a su vecino, cómo protege su domicilio o cualquier otra información importante a tener en cuenta.</p>
             </div>
           </div>
 
           <div class="subcard">
             <div class="subcard-header" onclick="toggleSubCard(this)">
-              Metros cuadrados <span class="arrow">▼</span>
+              Escucha activa y personalización <span class="arrow">▼</span>
             </div>
             <div class="subcard-body hidden poppins-regular-30">
-            <p>-Podemos consultar si conoce cuántos MT2 tiene su domicilio, o en su defecto cuántos ambientes tiene su casa. </p>
-            <p>-Contamos aproximadamente 20mt2 por ambiente.</p> 
-            <p>-Cubrimos hasta 500mt2.</p>
-	    <br>
-	    <p><strong>Situaciones:</strong> 
-	    <p>Cuando el cliente nos dice que tiene más de 500mt2, hay que indagar:</p>
-	    <p>-¿Qué quiere cubir?
-	    <p>-¿Cuántos puntos de acceso tiene?</p>
+            <p>Entendiendo el motivo de la búsqueda del cliente y cómo está protegiendo su domicilio, tomamos esa información y ofrecemos algún dispositivo que supla su interés, y a su vez generamos necesidad.</p>
             <br>
-	    <p><strong>Se puede pactar visita:</strong>     
-            <p>-Si tiene más de 500mt2, cuenta con un solo acceso y/o dice que quiere cubrir una parte en concreto (oficina) menor a 500mt2, la visita es viable. Acá hay que aclarar que se cubren hasta 500mt2 y/o oficinas.</p>
-	    <br>
-	    <p><strong>No se puede pactar visita:</strong>     
-	    <p>-Si tiene más de 500mt2 y más de dos accesos, la visita no es viable.</p>
+	    <p><strong>Por ejemplo:</strong> Si se trata de una cotización para una persona mayor, nosotros contamos con un panel de usuario que es inalámbrico. Esto lo que hace es que lo puede llevar con ella en donde lo necesite y en caso de necesitar ayuda, al presionar el botón de SOS, está alguien del CRA para ayudar.</p>
             </div>
           </div>
         
           <div class="subcard">
             <div class="subcard-header" onclick="toggleSubCard(this)">
-              Luz Corriente <span class="arrow">▼</span>
+              Puestas en situación <span class="arrow">▼</span>
             </div>
             <div class="subcard-body hidden poppins-regular-30">
-            <p>-Se debe consultar si cuenta con luz corriente o en su defecto, luz de obra.</p> 
-            <p>-Esto se pregunta porque se deben enchufar los dispositivos al momento de la instalación.</p> 
-            <p>-No funciona que un vecino le preste una extensión de la misma.</p>
+            <p>-Debemos aplicar ejemplos que tengan sentido con la negativa que nos plantea el cliente.</p> 
+            <p>-En este momento debemos aplicar lo obtenido en el sondeo. Aplicando escucha activa y la personalización, resulta más sencillo poner en situación.</p> 
             </div>
           </div>
 
           <div class="subcard">
             <div class="subcard-header" onclick="toggleSubCard(this)">
-              Señal de celular <span class="arrow">▼</span>
+              ¿Qué debemos evitar?<span class="arrow">▼</span>
             </div>
             <div class="subcard-body hidden poppins-regular-30">
-          <p>-Aclarar que no se refiere al WIFI.</p> 
-          <p>-Consultar si en el domicilio tiene buena conexión de celular. </p>
-          <p>-Podemos preguntarle si en domicilio recibe con normalidad llamadas y mensajes de texto.</p>
-          <br>
-          <p><strong>Nota: </strong> En caso de no tener buena señal de celular, podemos indigar con que compañía celular le sucede eso o si en algún lugar del domicilio.</strong></p>
-          <p>Recordemos que de esto depende el contacto con la CRA</p>
+          <p>-Si decimos que estamos en la zona o tenemos alta demanda, debemos acompañarlo con una puesta en situación. Explicarle que como tenemos alta demanda, que podría pasar por no tener protección en su domicilio.</p> 
+          <p>-Insistir con horarios solo hace que el cliente se canse y termine cortando. Lo ideal es sondear los horarios que tiene, bajar franjas horarias y acompañarlos con puestas en situación.</p>
             </div>
             </div>
+		
          <div class="subcard">
             <div class="subcard-header" onclick="toggleSubCard(this)">
-              Decisor <span class="arrow">▼</span>
+              ¿Qué resulta mejor usar? <span class="arrow">▼</span>
             </div>
             <div class="subcard-body hidden poppins-regular-30">
-            Al momento de la visita, debe estar una persona decisora o que forme parte de esa decisión.
-	<p>No se debe inducir o minimizar la respuesta. No es para completar la ficha, es una pregunta filtro</p>
-	<br>
-	<p><strong>Algunas situaciones:</strong></p>
-        <br>
-	<p><strong>-Local comercial:</strong> Se debe consultar si la persona con la que habla es decisora. En caso de no serlo, se debe pedir hablar con alguna persona que si lo sea.</p>
-	<p><strong>-Recepcionista/ Secretaria:</strong> Aplica para aquellas personas que envían el presupuesto a su jefe o un grupo de personas. En caso de no formar parte de la decisión, se debe pedir hablar con alguna persona que si lo sea</p>
-	<p><strong>-Socios:</strong> Si es una empresa, y hablas con un socio. Hay que preguntar si toma decisiones. Se puede sacar visita con el DNI de la persona decisora con la que se habla, o con el CUIT de la empresa</p>
+	<p>Acompañarlo con un cierre parcial. Podemos ir con el PROX, el EDS, pedir calle y altura o algo que no deje pensar al cliente.</p>
+	<p>Demostremos que sabemos que los hechos delictivos están en ascenso y estamos para ayudarle.</p>
+	<p>La idea de esto es mostrarle al cliente qué pasaría si no tiene una protección.</p>
+	<p>Estamos para ayudarlo y tenemos las herramientas necesarias para hacerlo.</p>
+	<p>Podemos utilizar situaciones reales o cosas que nos haya dicho</p>
+	<p>Deben sentirse como escenarios reales que pueden pasar.</p>
             </div>
           </div> 
         </div>
