@@ -258,5 +258,18 @@ main#visita {
 main#visita {
   transform: scale(0.8);
   transform-origin: top left;
+  padding: 2.5rem 0;
+  width: 120%;
+}
+main#novisita {
+  transform: scale(0.8);
+  transform-origin: top left;
+  padding: 2.5rem 0;
+  width: 120%;
+}
+main#transferencia {
+  transform: scale(0.8);
+  transform-origin: top left;
+  padding: 2.5rem 0;
   width: 120%;
 }
