@@ -2,181 +2,418 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cards Rebate</title>
-  <link rel="stylesheet" href="styles.css"/>
-  <script>
-    function toggleCard(card) {
-      const content = card.querySelector('.card-content');
-      const flecha = card.querySelector('.flecha');
-      if (content.style.display === 'none') {
-        content.style.display = 'block';
-        flecha.textContent = '▲';
-      } else {
-        content.style.display = 'none';
-        flecha.textContent = '▼';
-      }
-    }
-  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BDC – No Visita</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
-  <main>
-    <!-- SONDEO -->
+  <header class="subpage-header" onclick="volverInicio()">
+    <h1>BDC</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="visita.html">Visita</a>
+      <a href="novisita.html">No visita</a>
+      <a href="transferencia.html">Transferencia</a>
+    </nav>
+  </header>
+
+  <main id="novisita">
     <div class="card grande nivel1">
       <div class="card-header poppins-regular-30" onclick="toggleCard(this.closest('.card'))">
-        Sondeo <span class="flecha">▼</span>
+        Sondeo<span class="flecha">▼</span>
+      </div>
+      <div class="card-content poppins-regular-30">
+        <p><strong>Se debe consultar:</strong></p>
+        <p>1) ¿Qué te llevó a buscar un sistema de alarmas?</p>
+        <p>2) ¿Cómo estás protegiendo tu casa hoy en día?</p>
+        <br>
+        <p><strong>Nota:</strong> No necesariamente tienen que ser estas preguntas.
+        La idea es que se hagan preguntas abiertas porque incentivan la charla con el cliente, y tenemos herramientas a la hora de rebatir.</p>
+        <br>
+        <p><strong>A tener en cuenta:</strong></p>
+        <br>
+        <p><strong>-Por prevención:</strong> Al mencionar que tenemos aumento de hechos delictivos, podemos acompañarlo consultando cómo viene su barrio, qué busca proteger o si ha visto algo fuera de lo común.</p>
+        <p><strong>-Por robo:</strong> Empatizar consultando cómo fue el robo, si se encuentra bien o si saben por dónde ingresó.</p>
+        <p><strong>-Por comparativa:</strong> Debemos entender qué empresa tiene, qué busca comparar (servicio/precio), y características de su sistema para poder comparar (si es cableado, si es monitoreado o qué le incluye).</p>
+      </div>
+    </div>
+    
+    <div class="card grande nivel1">
+      <div class="card-header poppins-regular-30" onclick="toggleCard(this.closest('.card'))">
+    Empatía <span class="flecha">▼</span>
+  </div>
+  <div class="card-content" style="display: block;">
+    <div class="card grande nivel2">
+      <div class="card-header poppins-semibold-40" onclick="toggleCard(this.closest('.card'))">
+        ¿Qué es? <span class="flecha">▼</span>
+      </div>
+      <div class="card-content" style="display: block;">
+        <div class="subcard-body poppins-regular-30">
+          <p>-Juega un papel fundamental en nuestra gestión. Creamos un ambiente positivo en donde el cliente se sienta escuchado y sienta que estamos para ayudarlo, porque comprendemos sus necesidades.</p>
+          <p>-Refiere a la capacidad de comprender y compartir sentimientos de la otra persona.</p>
+          <p>-Nos permite establecer una conexión positiva con la persona del otro lado.</p>
+          <p>-Implica escuchar, entender y ofrecer soluciones con un enfoque amigable.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card grande nivel2">
+      <div class="card-header poppins-semibold-40" onclick="toggleCard(this.closest('.card'))">
+        Situaciones <span class="flecha">▼</span>
       </div>
       <div class="card-content" style="display: none;">
-        <div class="subcard-body hidden poppins-regular-30">
-          <p>El objetivo del sondeo es identificar la necesidad del cliente. No todos llaman o atienden porque fueron robados. A veces buscan comodidad, tecnología, mudan a una zona más insegura, o quieren proteger a su familia.</p>
-          <p>El sondeo orienta el foco del asesor para la visita.</p>
-          <br />
-          <p>Podés usar preguntas como:</p>
-          <ul>
-            <li>¿Tenés alarma actualmente?</li>
-            <li>¿Qué tipo de propiedad es?</li>
-            <li>¿Qué te interesa proteger principalmente?</li>
-            <li>¿Hubo algún hecho puntual que motivó tu interés?</li>
-          </ul>
+        <div class="subcard">
+          <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+            Robo <span class="arrow">▼</span>
+          </div>
+          <div class="subcard-body hidden poppins-regular-30">
+            “Lamento mucho escuchar eso, ¿usted y su familia se encuentran bien? También podemos personalizar la llamada indicando que en la zona los índices delictivos son alarmantes"
+          </div>
+        </div>
+        <div class="subcard">
+          <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+            Tiene alarma <span class="arrow">▼</span>
+          </div>
+          <div class="subcard-body hidden poppins-regular-30">
+            Indagar cuál tiene y mencionar que estamos con muchos llamados de esa empresa de clientes disconformes con el servicio.
+          </div>
+        </div>
+        <div class="subcard">
+          <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+            Prevención <span class="arrow">▼</span>
+          </div>
+          <div class="subcard-body hidden poppins-regular-30">
+            Siempre ponernos en su lugar, indicando que comprendemos la situación y empatizando con el contexto actual de inseguridad. También podemos sumar que la tenemos alta demanda en la zona.
+          </div>
+        </div>
+        <div class="subcard">
+          <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+            No quiere brindar su DNI <span class="arrow">▼</span>
+          </div>
+          <div class="subcard-body hidden poppins-regular-30">
+            Entiendo completamente que no quieras brindar tu número de DNI. Te explico que esto es por un tema de seguridad para ambas partes. Nosotros te enviamos el perfil profesional del experto, que tiene todos sus datos personas y en contraparte, te pedimos el DNI.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="card grande nivel1">
+      <div class="card-header poppins-regular-30" onclick="toggleCard(this.closest('.card'))">
+        Fórmula de rebates <span class="flecha">▼</span>
+      </div>
+      <div class="card-content">
+        <div class="subcard-group">
+          <div class="subcard">
+            <div class="subcard-header" onclick="toggleSubCard(this)">
+              Sondeo <span class="arrow">▼</span>
+            </div>
+            <div class="subcard-body hidden poppins-regular-30">
+              <p>Se hace para entender el escenario actual.</p>
+              <p>Hacemos preguntas abiertas para comprender por qué el cliente cotiza, qué quiere proteger, si sucedió algo en el barrio, a su vecino, cómo protege su domicilio o cualquier otra información importante a tener en cuenta.</p>
+            </div>
+          </div>
+          <div class="subcard">
+            <div class="subcard-header" onclick="toggleSubCard(this)">
+              Escucha activa y personalización <span class="arrow">▼</span>
+            </div>
+            <div class="subcard-body hidden poppins-regular-30">
+              <p>Entendiendo el motivo de la búsqueda del cliente y cómo está protegiendo su domicilio, tomamos esa información y ofrecemos algún dispositivo que supla su interés, y a su vez generamos necesidad.</p>
+              <br>
+              <p><strong>Por ejemplo:</strong> Si se trata de una cotización para una persona mayor, contamos con un panel inalámbrico con botón SOS, y CRA listo para asistir.</p>
+            </div>
+          </div>
+          <div class="subcard">
+            <div class="subcard-header" onclick="toggleSubCard(this)">
+              Puestas en situación <span class="arrow">▼</span>
+            </div>
+            <div class="subcard-body hidden poppins-regular-30">
+              <p>-Debemos aplicar ejemplos que tengan sentido con la negativa que nos plantea el cliente.</p>
+              <p>-En este momento debemos aplicar lo obtenido en el sondeo. Aplicando escucha activa y la personalización, resulta más sencillo poner en situación.</p>
+            </div>
+          </div>
+          <div class="subcard">
+            <div class="subcard-header" onclick="toggleSubCard(this)">
+              ¿Qué debemos evitar? <span class="arrow">▼</span>
+            </div>
+            <div class="subcard-body hidden poppins-regular-30">
+              <p>-Si decimos que estamos en la zona o tenemos alta demanda, debemos acompañarlo con una puesta en situación. Explicarle que como tenemos alta demanda, que podría pasar por no tener protección en su domicilio.</p>
+              <p>-Insistir con horarios solo hace que el cliente se canse y termine cortando. Lo ideal es sondear los horarios que tiene, bajar franjas horarias y acompañarlos con puestas en situación.</p>
+            </div>
+          </div>
+          <div class="subcard">
+            <div class="subcard-header" onclick="toggleSubCard(this)">
+              ¿Qué resulta mejor usar? <span class="arrow">▼</span>
+            </div>
+            <div class="subcard-body hidden poppins-regular-30">
+              <p>-Acompañarlo con un cierre parcial. Podemos ir con el PROX, el EDS, pedir calle y altura o algo que no deje pensar al cliente.</p>
+              <p>-Demostremos que sabemos que los hechos delictivos están en ascenso y estamos para ayudarle. </p>
+              <p>-La idea de esto es mostrarle al cliente qué pasaría si no tiene una protección.</p>
+              <p>-Estamos para ayudarlo y tenemos las herramientas necesarias para hacerlo.</p>
+              <p>-Podemos utilizar situaciones reales o cosas que nos haya dicho.</p>
+              <p>-Deben sentirse como escenarios reales que pueden pasar. </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- EMPATÍA -->
     <div class="card grande nivel1">
-      <div class="card-header poppins-regular-30" onclick="toggleCard(this.closest('.card'))">
-        Empatía <span class="flecha">▼</span>
+      <div class="card-header poppins-semibold-60" onclick="toggleCard(this.closest('.card'))">
+        Ejemplos de rebates <span class="flecha">▼</span>
       </div>
       <div class="card-content" style="display: none;">
+
         <div class="card grande nivel2">
           <div class="card-header poppins-semibold-40" onclick="toggleCard(this.closest('.card'))">
-            ¿Qué es? <span class="flecha">▼</span>
+            Por precio <span class="flecha">▼</span>
           </div>
           <div class="card-content" style="display: none;">
-            <div class="subcard-body poppins-regular-30">
-              <p>La empatía es fundamental en cualquier contacto. No es solo “ser amable”, sino demostrar que entendemos lo que la persona siente o necesita.</p>
-              <p>Aplicada al rol de ventas, permite generar una relación de confianza con el cliente desde el primer momento.</p>
+            <div class="subcard">
+              <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+                “Solo quiero saber el precio.” <span class="arrow">▼</span>
+              </div>
+              <div class="subcard-body hidden poppins-regular-30">
+                <p><strong>Lo que realmente dice:</strong> No entiende el valor de la visita / Desconfía.</p>
+                <br>
+                <p><strong>Rebate sugerido:</strong> “Justamente por eso enviamos a un experto sin costo, porque el precio depende de tus necesidades y del lugar.”</p>
+              </div>
+            </div>
+            <div class="subcard">
+              <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+                "La publicidad decía que el precio era online." <span class="arrow">▼</span>
+              </div>
+              <div class="subcard-body hidden poppins-regular-30">
+                <p><strong>Lo que realmente dice:</strong> No le gusta la metodología de la visita.​</p>
+                <br>
+                <p><strong>Rebate sugerido:</strong> “Un precio por teléfono puede no incluir todo lo que necesitás. Preferimos que tengas la información completa.”</p>
+              </div>
+            </div>
+            <div class="subcard">
+              <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+                “¿No me podés decir aunque sea un estimado?”​ <span class="arrow">▼</span>
+              </div>
+              <div class="subcard-body hidden poppins-regular-30">
+                <p><strong>Lo que realmente dice:</strong> Quiere comparar o curiosear.​</p>
+                <br>
+                <p><strong>Rebate sugerido:</strong> “Podríamos darte un estimado, pero podría no ser representativo. La visita te asegura un presupuesto real y claro.”​</p>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="card grande nivel2">
           <div class="card-header poppins-semibold-40" onclick="toggleCard(this.closest('.card'))">
-            ¿Cómo se transmite? <span class="flecha">▼</span>
+            Por disponibilidad <span class="flecha">▼</span>
           </div>
           <div class="card-content" style="display: none;">
-            <div class="subcard-body poppins-regular-30">
-              <p><strong>1. Escucha activa:</strong> No interrumpas. Dejá que se exprese.</p>
-              <p><strong>2. Validación:</strong> Usá frases como “te entiendo”, “claro”, “es lógico”.</p>
-              <p><strong>3. Tono y ritmo:</strong> Acorde a la situación. No automático.</p>
-              <p><strong>4. Personalización:</strong> Llamalo por su nombre. Referite a lo que dijo.</p>
+            <div class="subcard">
+              <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+                “No tengo tiempo” <span class="arrow">▼</span>
+              </div>
+              <div class="subcard-body hidden poppins-regular-30">
+                <p><strong>Lo que realmente dice:</strong> Falta de interés o agenda ajustada.​</p>
+                <br>
+                <p><strong>Rebate sugerido:</strong> “La idea no es complicarte, sino ayudarte amoldarnos a vos, que horarios manejas ¿Por la mañana o por la tarde?"​</p>
+              </div>
+            </div>
+            <div class="subcard">
+              <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+                “Ya tengo alarma” <span class="arrow">▼</span>
+              </div>
+              <div class="subcard-body hidden poppins-regular-30">
+                <p><strong>Lo que realmente dice:</strong> Cree que no necesita el servicio.</p>
+                <br>
+                <p><strong>Rebate sugerido:</strong> “Buenísimo, así podés comparar. Te mostramos las diferencias y mejoras tecnológicas.”</p>
+              </div>
+            </div>
+            <div class="subcard">
+              <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+                “Estoy trabajando todo el día” <span class="arrow">▼</span>
+              </div>
+              <div class="subcard-body hidden poppins-regular-30">
+                <p><strong>Lo que realmente dice:</strong> Agenda ajustada.</p>
+                <br>
+                <p><strong>Rebate sugerido:</strong> “Justamente, no estás en todo el día y me imagino que buscas proteger tu casa y tu familia, nos amoldamos a tus horarios para que nos puedas conocer."​</p>
+              </div>
             </div>
           </div>
         </div>
+
+        <div class="card grande nivel2">
+  <div class="card-header poppins-semibold-40" onclick="toggleCard(this.closest('.card'))">
+    Generales <span class="flecha">▼</span>
+  </div>
+  <div class="card-content">
+
+    <div class="subcard">
+      <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+        "No quiero que me vendan nada" <span class="arrow">▼</span>
+      </div>
+      <div class="subcard-body hidden poppins-regular-30">
+        <p><strong>Lo que realmente dice:</strong> Tiene miedo a la presión o una mala experiencia previa</p>
+        <br>
+        <p><strong>Rebate sugerido:</strong> “Es solo para que conozcas el servicio y veas si se adapta a lo que estás buscando, obviamente la decisión siempre es tuya, pero danos la oportunidad de mostrarte como funciona todo que no te vas a arrepentir.”</p>
       </div>
     </div>
 
-    <!-- HABILIDADES BLANDAS -->
-    <div class="card grande nivel1">
+    <div class="subcard">
+      <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+        "Vivimos en un barrio tranquilo" <span class="arrow">▼</span>
+      </div>
+      <div class="subcard-body hidden poppins-regular-30">
+        <p><strong>Lo que realmente dice:</strong> No percibe necesidad de seguridad</p>
+        <br>
+        <p><strong>Rebate sugerido:</strong> “Claro, y es justamente en esos barrios donde más valoran la prevención. El 90% de nuestros clientes también pensaban que no es tan necesario y terminan instalando por todas las funciones y tranquilidad que brinda nuestro servicio.”</p>
+      </div>
+    </div>
+
+    <div class="subcard">
+      <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+        "Tengo que hablarlo con mi pareja / familiar" <span class="arrow">▼</span>
+      </div>
+      <div class="subcard-body hidden poppins-regular-30">
+        <p><strong>Lo que realmente dice:</strong> Necesita validación o no quiere decidir solo/a</p>
+        <br>
+        <p><strong>Rebate sugerido:</strong> “Perfecto, la idea es que lo hables con toda la información en mano así pueden evaluarlo y tomar la decisión cuanto antes, tu pareja/familiar va a estar seguramente encantado de que tomes la iniciativa"</p>
+      </div>
+    </div>
+
+    <div class="subcard">
+      <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+        "Estoy por mudarme / aún no me instalé" <span class="arrow">▼</span>
+      </div>
+      <div class="subcard-body hidden poppins-regular-30">
+        <p><strong>Lo que realmente dice:</strong> No tiene aún el domicilio definido o no quiere decidir ahora</p>
+        <br>
+        <p><strong>Rebate sugerido:</strong> “¡Perfecto! Así podés tener todo listo de entrada. Te vas a un domicilio nuevo, con un barrio y vecinos nuevos, lo ideal sería que te instalemos en tu domicilio actual y después se traslada de manera gratuita como un mueble más porque es todo inalámbrico"</p>
+      </div>
+    </div>
+
+    <div class="subcard">
+      <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+        “Estoy esperando que me bajen de precio en otra empresa” <span class="arrow">▼</span>
+      </div>
+      <div class="subcard-body hidden poppins-regular-30">
+        <p>-“Entiendo. Justamente por eso ofrecemos una visita gratuita, para que puedas comparar no solo precio, sino calidad.”</p>
+        <br>
+        <p>-"La realidad es que te van a bajar el precio y en 3 meses vas a tener que volver a llamar por lo mismo, justamente la idea es darte un precio personalizado el cual el valor realmente lo puedas abonar."</p>
+      </div>
+    </div>
+
+    <div class="subcard">
+      <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+        "Tengo mascotas / niños y no sé si va a andar bien" <span class="arrow">▼</span>
+      </div>
+      <div class="subcard-body hidden poppins-regular-30">
+        <p>-“Nuestros sistemas están pensados para hogares con mascotas y niños. El experto te asesora sobre el modelo ideal.”</p>
+        <br>
+        <p>-"Justamente la idea es que veas vos el funcionamiento y no que te lo venda por teléfono, sacate las dudas y deja protegida tu casa y tu familia."</p>
+      </div>
+    </div>
+
+    <div class="subcard">
+      <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+        "Ya vino alguien de otra empresa" <span class="arrow">▼</span>
+      </div>
+      <div class="subcard-body hidden poppins-regular-30">
+        <p>-“Cada empresa tiene una propuesta distinta. El experto te muestra todos los dispositivos y amolda el precio a tu casa y tu bolsillo, la idea siempre es mejorar la propuesta."</p>
+        <br>
+        <p>-"Si alguien de otra empresa fue y todavía no cerraste es porque algo no te cerró, te ofrezco que nos puedas recibir, nos evalúes como empresa y tomes una decisión"</p>
+      </div>
+    </div>
+    
+    <div class="subcard">
+      <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+        "¿Puedo verlo todo por mail o por WhatsApp?" <span class="arrow">▼</span>
+      </div>
+      <div class="subcard-body hidden poppins-regular-30">
+        <p>-“Podés ver info general, pero lo más importante es que el especialista vea tu lugar y adapte la solución a tu caso.”</p>
+        <br>
+        <p>-"La idea es darte seguridad desde el momento uno, por lo tanto no hacemos ventas telefónicas ni te pedimos tarjeta de crédito por celular, conocenos y evaluanos como empresa de seguridad."</p>
+      </div>
+    </div>
+
+	  <div class="card grande nivel1">
       <div class="card-header poppins-regular-30" onclick="toggleCard(this.closest('.card'))">
         Habilidades blandas <span class="flecha">▼</span>
-      </div>
-      <div class="card-content" style="display: none;">
         <div class="subcard-body hidden poppins-regular-30">
-          <p>Además de seguir los procesos, es clave cómo lo decimos. Las habilidades blandas mejoran la experiencia del cliente y la efectividad de la gestión.</p>
-          <ul>
-            <li><strong>Claridad:</strong> Evitá tecnicismos o explicaciones confusas.</li>
-            <li><strong>Empatía:</strong> Ya la vimos, pero se aplica siempre.</li>
-            <li><strong>Comunicación efectiva:</strong> Saber cuándo hablar y cuándo escuchar.</li>
-            <li><strong>Resolución:</strong> Ir al punto y ofrecer soluciones.</li>
-          </ul>
+        Cuando las hacemos, nos aseguramos que el domicilio sea apto para la cotización y agilizamos la demostración.
+        <p>En caso de hacerse dos preguntas juntas, se debe obtener respuesta por ambas.</p>
         </div>
       </div>
-    </div>
-
-    <!-- FÓRMULA DE REBATE -->
-    <div class="card grande nivel1">
-      <div class="card-header poppins-regular-30" onclick="toggleCard(this.closest('.card'))">
-        Fórmula de rebate <span class="flecha">▼</span>
-      </div>
-      <div class="card-content" style="display: none;">
-        <div class="subcard-body hidden poppins-regular-30">
-          <p>La estructura más clara para rebatir es:</p>
-          <p><strong>1. Empatía → 2. Info → 3. Beneficio → 4. Cierre</strong></p>
-          <br />
-          <p><strong>1. Empatía:</strong> Validamos su inquietud. Reconocer lo que siente el cliente.</p>
-          <p><strong>2. Información:</strong> Explicamos lo necesario para que entienda lo que ofrecemos.</p>
-          <p><strong>3. Beneficio:</strong> Qué gana con eso. Aterrizamos en su necesidad.</p>
-          <p><strong>4. Cierre:</strong> Aseguramos la visita o usamos técnica de cierre.</p>
-          <br />
-          <p><strong>💡 Tip:</strong> También puede aplicarse a otras gestiones, como agendar, cambiar horario o levantar una objeción.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- EJEMPLOS DE REBATE -->
-    <div class="card grande nivel1">
-      <div class="card-header poppins-regular-30" onclick="toggleCard(this.closest('.card'))">
-        Ejemplos de rebate <span class="flecha">▼</span>
-      </div>
-      <div class="card-content" style="display: none;">
-        <div class="card grande nivel2">
-          <div class="card-header poppins-semibold-40" onclick="toggleCard(this.closest('.card'))">
-            Generales <span class="flecha">▼</span>
-          </div>
-          <div class="card-content" style="display: none;">
-            <div class="subcard-body poppins-regular-30">
-              <p><strong>“Ya lo estoy viendo con otra empresa”</strong></p>
-              <p>Justamente por eso nos estamos comunicando. Es importante que conozcas que ofrecemos una alarma monitoreada profesionalmente, con equipamiento en comodato, sin costo de instalación, y con monitoreo 24/7.</p>
-              <p>¿Ya te cotizaron? ¿Qué tipo de sistema te ofrecieron?</p>
-              <br />
-              <p><strong>“No quiero dar mis datos personales”</strong></p>
-              <p>Entiendo, es lógico que quieras cuidar tu información. Justamente por eso somos transparentes. Cuando agendamos una visita, te enviamos por mail todos los datos del asesor que te va a visitar, y en contraparte te pedimos tus datos para cuidar su seguridad también.</p>
-              <p>Además, no los usamos con fines comerciales ni los compartimos.</p>
+      <div class="card-content">
+        <div class="subcard-group">
+          <div class="subcard">
+            <div class="subcard-header" onclick="toggleSubCard(this)">
+              Voz dinámica <span class="arrow">▼</span>
+            </div>
+            <div class="subcard-body hidden poppins-regular-30">
+            <p>No podemos cotizar un domicilio que esté en obras porque puede interferir con la demostración de los dispositivos. </p>
+            <br>
+            <p>En caso que el cliente esté en obras internas, se debe indagar de manera clara y sin inducir la respuesta. Se debe consultar: </p>
+          <p>1) ¿Qué tipos de está haciendo? No darle ejemplos. Hacemos la pregunta y que el cliente diga. </p>
+          <p>2) ¿En dónde lo está haciendo? Refiere a que espacios internos del domicilio.</p>
+          <p>3) ¿Cuándo termina? Debemos saber si termina en 7 días.</p>
+          <br>
+	        <p><strong>Nota:</strong> En caso de no haber comenzado las obras, se debe indagar si tiene una fecha de inicio. </p>
             </div>
           </div>
-        </div>
 
-        <div class="card grande nivel2">
-          <div class="card-header poppins-semibold-40" onclick="toggleCard(this.closest('.card'))">
-            Precio <span class="flecha">▼</span>
-          </div>
-          <div class="card-content" style="display: none;">
-            <div class="subcard-body poppins-regular-30">
-              <p><strong>“Es muy caro”</strong></p>
-              <p>Entiendo tu preocupación. Tené en cuenta que es un sistema profesional con monitoreo 24/7, respuesta inmediata ante emergencias, mantenimiento y actualizaciones constantes.</p>
-              <p>Además, este mes tenemos bonificación en la instalación y el primer mes gratis.</p>
+          <div class="subcard">
+            <div class="subcard-header" onclick="toggleSubCard(this)">
+              Comercialidad <span class="arrow">▼</span>
+            </div>
+            <div class="subcard-body hidden poppins-regular-30">
+            <p>Podemos consultar si conoce cuántos MT2 tiene su domicilio, o en su defecto cuántos ambientes tiene su casa. </p>
+            <p>Contamos aproximadamente 20mt2 por ambiente.</p> 
+            <p>Cubrimos hasta 500mt2.</p>
             </div>
           </div>
-        </div>
-
-        <div class="card grande nivel2">
-          <div class="card-header poppins-semibold-40" onclick="toggleCard(this.closest('.card'))">
-            Instalación <span class="flecha">▼</span>
-          </div>
-          <div class="card-content" style="display: none;">
-            <div class="subcard-body poppins-regular-30">
-              <p><strong>“No quiero que me rompan la casa”</strong></p>
-              <p>Claro, te entiendo. Por suerte nuestra tecnología es totalmente inalámbrica, lo que permite que no haya necesidad de hacer obras ni perforaciones.</p>
-              <p>La instalación es limpia, rápida y en una sola visita.</p>
+        
+          <div class="subcard">
+            <div class="subcard-header" onclick="toggleSubCard(this)">
+              Calidez <span class="arrow">▼</span>
+            </div>
+            <div class="subcard-body hidden poppins-regular-30">
+            <p>Se debe consultar si cuenta con luz corriente o en su defecto, luz de obra.</p> 
+            <p>Esto se pregunta porqué se deben enchufar los dispositivos al momento de la instalación.</p> 
+            <p>No funciona que un vecino le preste una extensión de la misma.</p>
             </div>
           </div>
-        </div>
 
-        <div class="card grande nivel2">
-          <div class="card-header poppins-semibold-40" onclick="toggleCard(this.closest('.card'))">
-            Decisión <span class="flecha">▼</span>
-          </div>
-          <div class="card-content" style="display: none;">
-            <div class="subcard-body poppins-regular-30">
-              <p><strong>“Lo tengo que pensar”</strong></p>
-              <p>Entiendo, es una decisión importante. Por eso justamente es clave que puedas tener toda la información clara para comparar.</p>
-              <p>La visita no implica compromiso y es sin costo. El asesor te muestra todo lo que incluye el servicio, y después decidís con tranquilidad.</p>
+          <div class="subcard">
+            <div class="subcard-header" onclick="toggleSubCard(this)">
+             Generar seguridad <span class="arrow">▼</span>
+            </div>
+            <div class="subcard-body hidden poppins-regular-30">
+          <p>Aclarar que no se refiere al WIFI.</p> 
+          <p>Consultar si en el domicilio tiene buena conexión de celular. </p>
+          <p>Podemos preguntarle si en domicilio recibe con normalidad llamadas y mensajes de texto.</p>
+          <br>
+          <p><strong>Nota: </strong> En caso de no tener buena señal de celular, podemos indigar con que compañía celular le sucede eso o si en algún lugar del domicilio.</strong></p>
+          <p>Recordemos que de esto depende el contacto con la CRA</p>
+            </div>
+            </div>
+         <div class="subcard">
+            <div class="subcard-header" onclick="toggleSubCard(this)">
+              Escucha activa <span class="arrow">▼</span>
+            </div>
+            <div class="subcard-body hidden poppins-regular-30">
+            <p>Al momento de la visita, debe estar una persona decisora o que forme parte de esa decisión.</p>
+            <p>Si se trata de un local o empresa, se debe consultar si forma parte de la decisión de contratación, o de lo contrario, se debe hablar con alguna persona que si lo sea.</p>
+            <p>No se debe inducir o minimizar la respuesta. No es para completar la ficha, es una pregunta filtro</p> 
             </div>
           </div>
         </div>
       </div>
     </div>
+      
+  </div>
+</div>
   </main>
+  <script src="script.js"></script>
 </body>
 </html>
