@@ -40,3 +40,4 @@ function toggleSubCard(header) {
     arrow.textContent = body.classList.contains('hidden') ? '▼' : '▲';
   }
 }
+
