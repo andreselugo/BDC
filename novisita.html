@@ -16,12 +16,12 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="visita.html">Visita</a>
-      <a href="no-visita.html">No visita</a>
+      <a href="novisita.html">No visita</a>
       <a href="transferencia.html">Transferencia</a>
     </nav>
   </header>
 
-  <main id="No Visita">
+  <main id="novisita">
     <div class="card grande nivel1">
       <div class="card-header poppins-regular-30" onclick="toggleCard(this.closest('.card'))">
         Sondeo<span class="flecha">▼</span>
@@ -40,68 +40,65 @@
         <p><strong>-Por comparativa:</strong> Debemos entender qué empresa tiene, qué busca comparar (servicio/precio), y características de su sistema para poder comparar (si es cableado, si es monitoreado o qué le incluye).</p>
       </div>
     </div>
-
     <div class="card grande nivel1">
-      <div class="card-header poppins-semibold-60" onclick="toggleCard(this.closest('.card'))">
-        Empatía <span class="flecha">▼</span>
+  <div class="card-header poppins-semibold-60" onclick="toggleCard(this.closest('.card'))">
+    Empatía <span class="flecha">▼</span>
+  </div>
+  <div class="card-content" style="display: block;">
+    <div class="card grande nivel2">
+      <div class="card-header poppins-semibold-40" onclick="toggleCard(this.closest('.card'))">
+        ¿Qué es? <span class="flecha">▼</span>
       </div>
       <div class="card-content" style="display: block;">
-        <div class="card grande nivel2">
-          <div class="card-header poppins-semibold-40" onclick="toggleCard(this.closest('.card'))">
-            ¿Qué es? <span class="flecha">▼</span>
+        <div class="subcard-body poppins-regular-30">
+          <p>-Juega un papel fundamental en nuestra gestión. Creamos un ambiente positivo en donde el cliente se sienta escuchado y sienta que estamos para ayudarlo, porque comprendemos sus necesidades.</p>
+          <p>-Refiere a la capacidad de comprender y compartir sentimientos de la otra persona.</p>
+          <p>-Nos permite establecer una conexión positiva con la persona del otro lado.</p>
+          <p>-Implica escuchar, entender y ofrecer soluciones con un enfoque amigable.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card grande nivel2">
+      <div class="card-header poppins-semibold-40" onclick="toggleCard(this.closest('.card'))">
+        Situaciones <span class="flecha">▼</span>
+      </div>
+      <div class="card-content" style="display: none;">
+        <div class="subcard">
+          <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+            Robo <span class="arrow">▼</span>
           </div>
-          <div class="card-content" style="display: none;">
-            <div class="subcard-body hidden poppins-regular-30">
-              <p>-Juega un papel fundamental en nuestra gestión. Creamos un ambiente positivo en donde el cliente se sienta escuchado y sienta que estamos para ayudarlo, porque comprendemos sus necesidades.</p>
-              <p>-Refiere a la capacidad de comprender y compartir sentimientos de la otra persona.</p>
-              <p>-Nos permite establecer una conexión positiva con la persona del otro lado.</p>
-              <p>-Implica escuchar, entender y ofrecer soluciones con un enfoque amigable.</p>
-            </div>
+          <div class="subcard-body hidden poppins-regular-30">
+            “Lamento mucho escuchar eso, ¿usted y su familia se encuentran bien? También podemos personalizar la llamada indicando que en la zona los índices delictivos son alarmantes”
           </div>
         </div>
-
-        <div class="card grande nivel2">
-          <div class="card-header poppins-semibold-40" onclick="toggleCard(this.closest('.card'))">
-            Situaciones <span class="flecha">▼</span>
+        <div class="subcard">
+          <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+            Tiene alarma <span class="arrow">▼</span>
           </div>
-          <div class="card-content" style="display: none;">
-            <div class="subcard">
-              <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
-                Robo<span class="arrow">▼</span>
-              </div>
-              <div class="subcard-body hidden poppins-regular-30">
-                “Lamento mucho escuchar eso, ¿usted y su familia se encuentran bien? También podemos personalizar la llamada indicando que en la zona los índices delictivos son alarmantes”
-              </div>
-            </div>
-            <div class="subcard">
-              <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
-                Tiene alarma <span class="arrow">▼</span>
-              </div>
-              <div class="subcard-body hidden poppins-regular-30">
-                Indagar cuál tiene y mencionar que estamos con muchos llamados de esa empresa de clientes disconformes con el servicio.
-              </div>
-            </div>
-            <div class="subcard">
-              <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
-                Prevención <span class="arrow">▼</span>
-              </div>
-              <div class="subcard-body hidden poppins-regular-30">
-                Siempre ponernos en su lugar, indicando que comprendemos la situación y empatizando con el contexto actual de inseguridad. También podemos sumar que la tenemos alta demanda en la zona.
-              </div>
-            </div>
-            <div class="subcard">
-              <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
-                No quiere brindar su DNI<span class="arrow">▼</span>
-              </div>
-              <div class="subcard-body hidden poppins-regular-30">
-                Entiendo completamente que no quieras brindar tu número de DNI. Te explico que esto es por un tema de seguridad para ambas partes. Nosotros te enviamos el perfil profesional del experto, que tiene todos sus datos personales y en contraparte, te pedimos el DNI.
-              </div>
-            </div>
+          <div class="subcard-body hidden poppins-regular-30">
+            Indagar cuál tiene y mencionar que estamos con muchos llamados de esa empresa de clientes disconformes con el servicio.
+          </div>
+        </div>
+        <div class="subcard">
+          <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+            Prevención <span class="arrow">▼</span>
+          </div>
+          <div class="subcard-body hidden poppins-regular-30">
+            Siempre ponernos en su lugar, indicando que comprendemos la situación y empatizando con el contexto actual de inseguridad. También podemos sumar que la tenemos alta demanda en la zona.
+          </div>
+        </div>
+        <div class="subcard">
+          <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+            No quiere brindar su DNI <span class="arrow">▼</span>
+          </div>
+          <div class="subcard-body hidden poppins-regular-30">
+            Entiendo completamente que no quieras brindar tu número de DNI. Te explico que esto es por un tema de seguridad para ambas partes. Nosotros te enviamos el perfil profesional del experto, que tiene todos sus datos personales y en contraparte, te pedimos el DNI.
           </div>
         </div>
       </div>
     </div>
-
+  </div>
+</div>
     <div class="card grande nivel1">
       <div class="card-header poppins-regular-30" onclick="toggleCard(this.closest('.card'))">
         Fórmula de rebates <span class="flecha">▼</span>
@@ -234,99 +231,101 @@
         </div>
 
         <div class="card grande nivel2">
-          <div class="card-header poppins-semibold-40" onclick="toggleCard(this.closest('.card'))">
-            Generales <span class="flecha">▼</span>
-          </div>
-          <div class="subcard">
-              <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
-                "No quiero que me vendan nada" <span class="arrow">▼</span>
-              </div>
-              <div class="subcard-body hidden poppins-regular-30">
-             <p><strong>Lo que realmente dice:</strong> Tiene miedo a la presión o una mala experiencia previa</p> 
-	     <br>
-	     <p><strong>Rebate sugerido:</strong> “Es solo para que conozcas el servicio y veas si se adapta a lo que estás buscando, obviamente la decisión siempre es tuya, pero danos la oportunidad de mostrarte como funciona todo que no te vas a arrepentir.”</p>
-              </div>
-            </div>
-		  
-	 <div class="subcard">
-              <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
-                "Vivimos en un barrio tranquilo"​ <span class="arrow">▼</span>
-              </div>
-              <div class="subcard-body hidden poppins-regular-30">
-             <p><strong>Lo que realmente dice:</strong> No percibe necesidad de seguridad</p> 
-	     <br>
-	     <p><strong>Rebate sugerido:</strong> “Claro, y es justamente en esos barrios donde más valoran la prevención. El 90% de nuestros clientes también pensaban que no es tan necesario y terminan instalando por todas las funciones y tranquilidad que brinda nuestro servicio.”</p>
-         </div> 
-		 
-	 </div>	
-	   <div class="subcard">
-              <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
-                "Tengo que hablarlo con mi pareja / familiar"​ <span class="arrow">▼</span>
-              </div>
-              <div class="subcard-body hidden poppins-regular-30">
-             <p><strong>Lo que realmente dice:</strong> Necesita validación o no quiere decidir solo/a</p> 
-	     <br>
-	     <p><strong>Rebate sugerido:</strong> “Perfecto, la idea es que lo hables con toda la información en mano así pueden evaluarlo y tomar la decisión cuanto antes, tu pareja/familiar va a estar seguramente encantado de que tomes la iniciativa"​</p>
-         </div> 
-	 </div>	  
-            <div class="subcard">
-              <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
-                "Estoy por mudarme / aún no me instalé"​ <span class="arrow">▼</span>
-              </div>
-              <div class="subcard-body hidden poppins-regular-30">
-             <p><strong>Lo que realmente dice:</strong> No tiene aún el domicilio definido o no quiere decidir ahora</p> 
-	     <br>
-	     <p><strong>Rebate sugerido:</strong> “¡Perfecto! Así podés tener todo listo de entrada. Te vas a un domicilio nuevo, con un barrio y vecinos nuevos, lo ideal sería que te instalemos en tu domicilio actual y después se traslada de manera gratuita como un mueble más porque es todo inalambrico"​</p>
-         </div> 
-	 </div>
+  <div class="card-header poppins-semibold-40" onclick="toggleCard(this.closest('.card'))">
+    Generales <span class="flecha">▼</span>
+  </div>
+  <div class="card-content">
 
-            <div class="subcard">
-              <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
-                “Estoy esperando que me bajen de precio en otra empresa”​ <span class="arrow">▼</span>
-              </div>
-              <div class="subcard-body hidden poppins-regular-30">
-                <p>-“Entiendo. Justamente por eso ofrecemos una visita gratuita, para que puedas comparar no solo precio, sino calidad.”​</p>
-		<br>
-		<p>-"La realidad es que te van a bajar el precio y en 3 meses vas a tener que volver a llamar por lo mismo, justamente la idea es darte un precio personalizado el cual el valor realmente lo puedas abonar."​</p>
-            </div>
-            </div>
-
-            <div class="subcard">
-              <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
-                "Tengo mascotas / niños y no sé si va a andar bien" <span class="arrow">▼</span>
-              </div>
-              <div class="subcard-body hidden poppins-regular-30">
-            	<p>-“Nuestros sistemas están pensados para hogares con mascotas y niños. El experto te asesora sobre el modelo ideal.”​</p>
-		<br>
-		<p>-"Justamente la idea es que veas vos el funcionamiento y no que te lo venda por teléfono, sacate las dudas y deja protegida tu casa y tu familia."​</p>
-              </div>
-            </div>
-
-            <div class="subcard">
-              <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
-                "Ya vino alguien de otra empresa​" <span class="arrow">▼</span>
-              </div>
-              <div class="subcard-body hidden poppins-regular-30">
-                <p>-“Cada empresa tiene una propuesta distinta. El experto te muestra todos los dispositivos y amolda el precio a tu casa y tu bolsillo, la idea siempre es mejorar la propuesta."​</p>
-		<br>
-		<p>-"Si alguien de otra empresa fue y todavía no cerraste es porque algo no te cerro, te ofrezco que nos puedas recibir, nos evalúes como empresa y tomes una decisión"​</p>
-              </div>
-            </div>
-
-            <div class="subcard">
-              <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
-                "¿Puedo verlo todo por mail o por WhatsApp?" <span class="arrow">▼</span>
-              </div>
-              <div class="subcard-body hidden poppins-regular-30">
-                <p>-“Podés ver info general, pero lo más importante es que el especialista vea tu lugar y adapte la solución a tu caso.”​</p>
-		<br>
-		<p>-"La idea es darte seguridad desde el momento uno, por lo tanto no hacemos ventas telefónicas ni te pedimos tarjeta de crédito por celular, conocenos y evaluamos como empresa de seguridad."</p>
-            </div>
-          </div>
-        </div>
-
+    <div class="subcard">
+      <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+        "No quiero que me vendan nada" <span class="arrow">▼</span>
+      </div>
+      <div class="subcard-body hidden poppins-regular-30">
+        <p><strong>Lo que realmente dice:</strong> Tiene miedo a la presión o una mala experiencia previa</p>
+        <br>
+        <p><strong>Rebate sugerido:</strong> “Es solo para que conozcas el servicio y veas si se adapta a lo que estás buscando, obviamente la decisión siempre es tuya, pero danos la oportunidad de mostrarte como funciona todo que no te vas a arrepentir.”</p>
       </div>
     </div>
+
+    <div class="subcard">
+      <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+        "Vivimos en un barrio tranquilo" <span class="arrow">▼</span>
+      </div>
+      <div class="subcard-body hidden poppins-regular-30">
+        <p><strong>Lo que realmente dice:</strong> No percibe necesidad de seguridad</p>
+        <br>
+        <p><strong>Rebate sugerido:</strong> “Claro, y es justamente en esos barrios donde más valoran la prevención. El 90% de nuestros clientes también pensaban que no es tan necesario y terminan instalando por todas las funciones y tranquilidad que brinda nuestro servicio.”</p>
+      </div>
+    </div>
+
+    <div class="subcard">
+      <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+        "Tengo que hablarlo con mi pareja / familiar" <span class="arrow">▼</span>
+      </div>
+      <div class="subcard-body hidden poppins-regular-30">
+        <p><strong>Lo que realmente dice:</strong> Necesita validación o no quiere decidir solo/a</p>
+        <br>
+        <p><strong>Rebate sugerido:</strong> “Perfecto, la idea es que lo hables con toda la información en mano así pueden evaluarlo y tomar la decisión cuanto antes, tu pareja/familiar va a estar seguramente encantado de que tomes la iniciativa"</p>
+      </div>
+    </div>
+
+    <div class="subcard">
+      <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+        "Estoy por mudarme / aún no me instalé" <span class="arrow">▼</span>
+      </div>
+      <div class="subcard-body hidden poppins-regular-30">
+        <p><strong>Lo que realmente dice:</strong> No tiene aún el domicilio definido o no quiere decidir ahora</p>
+        <br>
+        <p><strong>Rebate sugerido:</strong> “¡Perfecto! Así podés tener todo listo de entrada. Te vas a un domicilio nuevo, con un barrio y vecinos nuevos, lo ideal sería que te instalemos en tu domicilio actual y después se traslada de manera gratuita como un mueble más porque es todo inalámbrico"</p>
+      </div>
+    </div>
+
+    <div class="subcard">
+      <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+        “Estoy esperando que me bajen de precio en otra empresa” <span class="arrow">▼</span>
+      </div>
+      <div class="subcard-body hidden poppins-regular-30">
+        <p>-“Entiendo. Justamente por eso ofrecemos una visita gratuita, para que puedas comparar no solo precio, sino calidad.”</p>
+        <br>
+        <p>-"La realidad es que te van a bajar el precio y en 3 meses vas a tener que volver a llamar por lo mismo, justamente la idea es darte un precio personalizado el cual el valor realmente lo puedas abonar."</p>
+      </div>
+    </div>
+
+    <div class="subcard">
+      <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+        "Tengo mascotas / niños y no sé si va a andar bien" <span class="arrow">▼</span>
+      </div>
+      <div class="subcard-body hidden poppins-regular-30">
+        <p>-“Nuestros sistemas están pensados para hogares con mascotas y niños. El experto te asesora sobre el modelo ideal.”</p>
+        <br>
+        <p>-"Justamente la idea es que veas vos el funcionamiento y no que te lo venda por teléfono, sacate las dudas y deja protegida tu casa y tu familia."</p>
+      </div>
+    </div>
+
+    <div class="subcard">
+      <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+        "Ya vino alguien de otra empresa" <span class="arrow">▼</span>
+      </div>
+      <div class="subcard-body hidden poppins-regular-30">
+        <p>-“Cada empresa tiene una propuesta distinta. El experto te muestra todos los dispositivos y amolda el precio a tu casa y tu bolsillo, la idea siempre es mejorar la propuesta."</p>
+        <br>
+        <p>-"Si alguien de otra empresa fue y todavía no cerraste es porque algo no te cerró, te ofrezco que nos puedas recibir, nos evalúes como empresa y tomes una decisión"</p>
+      </div>
+    </div>
+
+    <div class="subcard">
+      <div class="subcard-header poppins-semibold-40" onclick="toggleSubCard(this)">
+        "¿Puedo verlo todo por mail o por WhatsApp?" <span class="arrow">▼</span>
+      </div>
+      <div class="subcard-body hidden poppins-regular-30">
+        <p>-“Podés ver info general, pero lo más importante es que el especialista vea tu lugar y adapte la solución a tu caso.”</p>
+        <br>
+        <p>-"La idea es darte seguridad desde el momento uno, por lo tanto no hacemos ventas telefónicas ni te pedimos tarjeta de crédito por celular, conocenos y evaluanos como empresa de seguridad."</p>
+      </div>
+    </div>
+
+  </div>
+</div>
 
   </main>
   <script src="script.js"></script>
