@@ -273,6 +273,7 @@ main#transferencia {
   padding: 2.5rem 0;
   width: 120%;
 }
-.menu a.activo {
+nav a.activo {
   border-bottom: 4px solid #cc4a4a;
 }
+
