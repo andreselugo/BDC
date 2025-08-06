@@ -1,5 +1,9 @@
 window.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.card').forEach(c => c.classList.remove('abierta'));
+  document.querySelectorAll('.card').forEach(c => {
+    c.classList.remove('abierta');
+    const content = c.querySelector('.card-content');
+    if (content) content.style.display = 'none';
+  });
 });
 
 function volverInicio() {
@@ -40,4 +44,3 @@ function toggleSubCard(header) {
     arrow.textContent = body.classList.contains('hidden') ? '▼' : '▲';
   }
 }
-
