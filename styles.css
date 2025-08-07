@@ -25,14 +25,14 @@ header h1 {
 }
 header p {
   font-size: 50px;
-  line-height: 1;
+  line-height: 2;
 }
 main#inicio {
   text-align: center;
   padding: 2.5rem 1rem;
 }
 main#inicio h2 {
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 600;
   margin-bottom: 3rem;
   margin-top: -5px;
@@ -256,26 +256,27 @@ main#visita {
   font-size: 80px;
 }
 main#visita {
-  transform: scale(0.6);
+  transform: scale(0.7);
   transform-origin: top left;
   padding: 2.5rem 0;
-  width: 120%;
+  width: 100%;
 }
 main#novisita {
-  transform: scale(0.6);
+  transform: scale(0.7);
   transform-origin: top left;
   padding: 2.5rem 0;
-  width: 120%;
+  width: 100%;
 }
 main#transferencia {
-  transform: scale(0.6);
+  transform: scale(0.7);
   transform-origin: top left;
   padding: 2.5rem 0;
-  width: 120%;
+  width: 100%;
 }
 nav a.activo {
   border-bottom: 4px solid #cc4a4a;
 }
+
 
 
 
