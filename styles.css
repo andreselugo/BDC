@@ -259,23 +259,24 @@ main#visita {
   transform: scale(0.7);
   transform-origin: top left;
   padding: 2.5rem 0;
-  width: 160%;
+  width: 150%;
 }
 main#novisita {
   transform: scale(0.7);
   transform-origin: top left;
   padding: 2.5rem 0;
-  width: 160%;
+  width: 150%;
 }
 main#transferencia {
   transform: scale(0.7);
   transform-origin: top left;
   padding: 2.5rem 0;
-  width: 160%;
+  width: 150%;
 }
 nav a.activo {
   border-bottom: 4px solid #cc4a4a;
 }
+
 
 
 
