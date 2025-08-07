@@ -270,10 +270,11 @@ main#novisita {
 main#transferencia {
   transform: scale(0.8);
   transform-origin: top left;
-  padding: 2.5rem 0;
+  padding: 1.5rem 0;
   width: 120%;
 }
 nav a.activo {
   border-bottom: 4px solid #cc4a4a;
 }
+
 
