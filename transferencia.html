@@ -21,23 +21,84 @@
     </nav>
   </header>
 
-  <main id="transferencia">
-    <div class="card grande nivel1">
+    <div class="card grande nivel1" data-title="Preguntas filtro">
       <div class="card-header poppins-regular-30" onclick="toggleCard(this.closest('.card'))">
-        Estructura<span class="flecha">▼</span>
+        Estructura transferencia<span class="flecha">▼</span>
       </div>
-      <div class="card-content poppins-regular-30">
-        <p><strong>Se debe consultar:</strong></p>
-        <p>1) ¿Qué te llevó a buscar un sistema de alarmas?</p>
-        <p>2) ¿Cómo estás protegiendo tu casa hoy en día?</p>
-        <br>
-          <p><strong>Nota:</strong> No necesariamente tienen que ser estas preguntas.
-          La idea es que se hagan preguntas abiertas porque incentivan la charla con el cliente, y tenemos herramientas a la hora de rebatir.
-        </p>
+      <div class="card-content">
+        <div class="subcard-group">
+          <div class="subcard">
+            <div class="subcard-header" onclick="toggleSubCard(this)">
+             ¿Cómo se compone? <span class="arrow">▼</span>
+            </div>
+            <div class="subcard-body hidden poppins-regular-30">
+            <p>Una transferencia es un paso más allá que un <strong>No acepta</strong>, por lo que la estructura debe ser la misma. Debe estar presente:</p> 
+		<br>
+		<p>-Sondeo</p>
+		<p>-Escucha activa</p>
+		<p>-Puestas en situación</p>
+		<p>-Cierres parciales</p>
+		<br>
+		<p>En caso de no poderse pactar una visita, se le debe indicar que la visita queda desestimada y se transfiere al sector para que tenga una cotización personalizada por teléfono</p>
+            </div>
+          </div>
+
+          <div class="subcard">
+            <div class="subcard-header" onclick="toggleSubCard(this)">
+              Speech de transferencias <span class="arrow">▼</span>
+            </div>
+            <div class="subcard-body hidden poppins-regular-30">
+            <p><strong>1) Obras</strong></p>
+			<p></p>
+			<br>
+			<p><strong>2) Scoring</strong></p>
+			<p></p>
+			<br>
+			<p><strong>3) Otros</strong></p>
+			<p></p>
+            </div>
+          </div>
+		
+          <div class="subcard">
+            <div class="subcard-header" onclick="toggleSubCard(this)">
+              Tipificación (No interesado en una Booking) <span class="arrow">▼</span>
+            </div>
+            <div class="subcard-body hidden poppins-regular-30">
+          <p><strong>1) Quiere precios</strong></p>
+		<p>Luego de haber realizado el ABC, el cliente sigue queriendo precios.</p>
+		<br>
+		<p><strong>2) Competencia</strong></p>
+		<p>El cliente ya tiene empresa y desea ser asesorado telefónicamente.</p>
+		<br>
+		<p><strong>3) Interesado en solo cámaras</strong></p>
+		<p> El cliente no desea una alarma quiere sólo cámaras</p>
+		<br>
+		<p><strong>4) Otros</strong></p>
+		<p>Llamaba para cotizar espacios comunes o abiertos, quiere un cerco eléctrico, no cuenta con acceso al domicilio, espacios en obras</p>
+            </div>
+            </div>
+			
+         <div class="subcard">
+            <div class="subcard-header" onclick="toggleSubCard(this)">
+              ¿Cómo se transfiere?<span class="arrow">▼</span>
+            </div>
+            <div class="subcard-body hidden poppins-regular-30">
+            <p><strong>Paso 1:​</strong></p>
+		<p>Seleccionamos en Workspace la opción de transferencia directa e ingresamos el número de interno: 61105</p>
+		<br>
+		<p><strong>Paso 2</strong></p>
+		<p>Corroboramos que figure “Punto de Ruteo”​</p>
+		<br>
+		<p><strong>Paso 3</strong></p>
+		<p>Figurarán dos opciones, siempre deberemos seleccionar la primera opción y se derivará automáticamente al área.</p>
+            </div>
+          </div> 
+        </div>
+        </div>
       </div>
     </div>
-
-    <div class="card grande nivel1" data-title="Preguntas filtro">
+	  
+	  <div class="card grande nivel1" data-title="Preguntas filtro">
       <div class="card-header poppins-regular-30" onclick="toggleCard(this.closest('.card'))">
         ¿Por qué se transfiere?<span class="flecha">▼</span>
       </div>
@@ -116,7 +177,7 @@
               Sin disponibilidad <span class="arrow">▼</span>
             </div>
             <div class="subcard-body hidden poppins-regular-30">
-          <p>Cuando el cliente dice que no tiene tiempo de recibirnos dentro de las 48hr de ventana que tenemos para pactar una visita.</p>
+          <p>Cuando el cliente dice que no tiene tiempo de recibirnos dentro de la ventana de 48hr que tenemos para pactar una visita.</p>
 	<br>
 	<p><strong>Por ejemplo:</strong></p>
 	<p>- Cuando el cliente está de vacaciones.</p>
@@ -124,8 +185,8 @@
 	<br>
 	<p><strong>Ante esta situación:</strong></p>
 	<p>1) Debemos generar necesidad para que acepte una visita, utilizando lo obtenido en el sondeo.</p>
-	<p>2)Si está de vacaciones, podemos consultar si en donde está es persona decisora y si está dentro del mapa de zonas, podemos pactar una visita ahí.</p>
-	<p>3)En caso de no poder pactar una visita le indicamos que la visita queda desestimada y transferimos a un sector para que le hagan una cotización. Cuando el cliente acepta, se marca el interno y se transfiere.</p>
+	<p>2) Si está de vacaciones, podemos consultar si en donde está quedándose es persona decisora y si está dentro del mapa de zonas, podemos pactar una visita ahí.</p>
+	<p>3) En caso de no poder pactar una visita, le indicamos que la visita queda desestimada y transferimos a un sector para que le hagan una cotización. Cuando el cliente acepta, se marca el interno y se transfiere.</p>
             </div>
             </div>
 
@@ -140,7 +201,7 @@
 	<br>
 	<p>1) Debemos consultar si hay otra persona que tome la decisión en conjunto y que se encuentre al momento de la visita.</p>
 	<p>2) Si la persona no está en ese momento, podemos pedir el número de contacto para hacer un cierre con la misma. La visita no puede hacerse si no hay una confirmación de visita con la persona decisora.</p>
-	<p>3) En caso de no poder pactar una visita le indicamos que la visita queda desestimada y transferimos a un sector para que le hagan una cotización. Cuando el cliente acepta, se marca el interno y se transfiere.</p>
+	<p>3) En caso de no poder pactar una visita, le indicamos que la visita queda desestimada y transferimos a un sector para que le hagan una cotización. Cuando el cliente acepta, se marca el interno y se transfiere.</p>
             </div>
             </div>
 
@@ -149,12 +210,12 @@
               Obras (de 7 a 90 días)<span class="arrow">▼</span>
             </div>
             <div class="subcard-body hidden poppins-regular-30">
-          <p>Cuando el cliente está en obras y no tiene una fecha de finalización entre 7 a 90 días, se debe transferir el dato al sector de Televenta.</p>
+          <p>Cuando el cliente está en obras y tiene una fecha de finalización de entre 7 a 90 días, se debe transferir el dato al sector de Televenta.</p>
 	<br>
 	<p><strong>Ante esta situación:</strong></p>
 	<p>Debemos indagar bien las obras que está haciendo. Consultando qué hace, en dónde hace las obras y cuándo termina.</p>
 	<p>En caso de no contar con una fecha de finalización entre los días establecidos, se debe buscar pactar una visita a un domicilio en donde sea decisor y no tenga estas condiciones de obras.</p>
-	<p>En caso de no poder pactar una visita le indicamos que la visita queda desestimada y transferimos a un sector para que le hagan una cotización. Cuando el cliente acepta, se marca el interno y se transfiere.</p>
+	<p>En caso de no poder pactar una visita, le indicamos que la visita queda desestimada y transferimos a un sector para que le hagan una cotización. Cuando el cliente acepta, se marca el interno y se transfiere.</p>
             </div>
             </div>
 	      
@@ -168,8 +229,10 @@
 	   <p><strong>Ante esta situación:</strong></p>
 	   <br>
 	   <p>1) Debemos consultar si hay otra persona que tome la decisión en conjunto y que se encuentre al momento de la visita.</p>
+	   <br>
 	   <p>2) Si la persona no está en ese momento, podemos pedir el número de contacto para hacer un cierre con la misma. La visita no puede hacerse si no hay una confirmación de visita con la persona decisora.</p>
-	   <p>3) En caso de no poder pactar una visita le indicamos que la visita queda desestimada y transferimos a un sector para que le hagan una cotización. Cuando el cliente acepta, se marca el interno y se transfiere.</p>
+	   <br>
+	   <p>3) En caso de no poder pactar una visita, le indicamos que la visita queda desestimada y transferimos a un sector para que le hagan una cotización. Cuando el cliente acepta, se marca el interno y se transfiere.</p>
             </div>
           </div> 
         </div>
@@ -205,11 +268,11 @@
               Transferencia no aceptada <span class="arrow">▼</span>
             </div>
             <div class="subcard-body hidden poppins-regular-30">
-            <p>Sucede cuando el cliente dice que no quiere que lo llamen </p>
+            <p>Sucede cuando el cliente dice que no quiere que lo pasen al sector o llamen luego </p>
 		<br>
 		<p><strong>¿Cuándo se considera no aceptada?</strong></p>
-		<p>1) Cuando el cliente se niega a que lo llaman luego</p>
-		<p>2) Cuando se corta antes que el cliente acepte el paso a Televenta. En ese caso debe ser tipificada como corresponde</p>
+		<p>1) Cuando el cliente se niega a la transferencia</p>
+		<p>2) Cuando la comunicación se corta antes que el cliente acepte el paso a Televenta. En ese caso debe ser tipificada como corresponda</p>
 		<br>
 		<p><strong>Nota:</strong> Se penaliza el plan comisional de la semana</p>
             </div>
@@ -220,10 +283,10 @@
               Zona Televenta<span class="arrow">▼</span>
             </div>
             <div class="subcard-body hidden poppins-regular-30">
-            <p>Ante una zona que corresponde a Televenta, se debe consultar si tiene otro domicilio. Al hacer esto aumentamos las chances de hacer una visita, en caso que si podamos pactar alguna en el otro domicilio. </p>
+            <p>Ante una zona que corresponde a Televenta, se debe consultar si tiene otro domicilio. Esto es porque en caso de contar con alguna otra casa para cotizar, se aumentan las chances de hacer una visita.</p>
 		<br>
 		<p><strong>Speech sugerido:</strong></p>
-		<p> “Marta, te comento que tenemos actualmente el plan de protección total, lo que nos permite brindarte una buena oferta por tener más de un domicilio. ¿Contás con un domicilio en otra localidad aparte del que me mencionas?"</p>
+		<p> “Marta, te comento que tenemos el plan de protección total, lo que nos permite brindarte una buena oferta por tener más de un lugar a cotizar. Para poder aplicarte este beneficio importante, ¿Contás con un domicilio en otra localidad aparte del que me mencionas?"</p>
 		<br>
 		<p><strong>Nota:</strong><p> 
 		<p>-Se penaliza el plan comisional de la semana</p>
